@@ -2,7 +2,6 @@
   var clientsEl = document.querySelector('.clients')
 
   function insertClientsHTML(clientsEl) {
-    console.log(1)
     var clients = [
       ["方糖小镇","ftxz.png"],
       ["小马运动","xmyd.png"],

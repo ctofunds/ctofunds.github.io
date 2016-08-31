@@ -225,49 +225,35 @@ footer .content-wrapper {
 /* Mobile */
 
 @media (max-width: 1000px) {
-  body {
-    color: #333;
-  }
+  body { color: #333; }
 
-  .content-wrapper {
-    width: inherit;
-  }
+  .content-wrapper { width: inherit; }
 
-  header {
-    text-align: center;
-  }
-  header .nav {
-    display: none;
-  }
+  header { text-align: center; }
+  header .nav { display: none; }
 
-  .hero { font-size: 2rem }
+  .hero { font-size: 1.8rem; font-weight: lighter }
 
-  .section-title {
-    font-size: 1.6rem;
-  }
+  .section-title { font-size: 1.5rem; }
 
-  #our-service {
-    height: calc(100% + 400px);
-  }
-  .services-list {
-    height: 600px;
-  }
+  #our-service { height: calc(100% + 400px); }
+
+  .services-list { height: 600px; }
   .services-list .content-wrapper {
     flex-direction: column;
     align-items: center;
   }
 
   .team-partners { margin: 4rem 2rem }
-
   .partner-card { padding-left: 7.5rem }
-
   .team-consults { display: block }
 
   .team-consults-title {
     display: block;
     border-bottom: 1px dashed #CCC;
     margin: 3rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: lighter;
     line-height: 4em;
     text-align: center;
   }
