@@ -127,6 +127,7 @@ header {
   left: 0;
   width: 80px;
   height: 80px;
+  border-radius: 40px;
 }
 
 .partner-title {
