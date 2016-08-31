@@ -1,7 +1,8 @@
 (function () {
   var clientsEl = document.querySelector('.clients')
 
-  if (clientsEl) {
+  function insertClientsHTML(clientsEl) {
+    console.log(1)
     var clients = [
       ["方糖小镇","ftxz.png"],
       ["小马运动","xmyd.png"],
@@ -25,4 +26,10 @@
     })
     clientsEl.innerHTML = raw
   }
+
+  function onFirstScroll () {
+    clientsEl && insertClientsHTML(clientsEl)
+    window.removeEventListener('scroll', onFirstScroll)
+  }
+  window.addEventListener('scroll', onFirstScroll)
 })()
