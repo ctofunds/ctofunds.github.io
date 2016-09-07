@@ -19,7 +19,7 @@
     var raw = ''
     clients.forEach(function (item) {
       raw = raw + '<div class="client-card">' +
-        '<img src="assets/clients/' + item[1] + ' alt="HiCTO Client" />' +
+        '<img src="assets/clients/' + item[1] + '" alt="HiCTO Client" />' +
         '<p>' + item[0] + '</p>' +
       '</div>'
     })
