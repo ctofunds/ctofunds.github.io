@@ -4,7 +4,7 @@
   "description": "New home of ctofunds.",
   "main": "index.js",
   "scripts": {
-    "build": "gulp css",
+    "build": "gulp build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": "ctofunds/ctofunds.github.io.git",
