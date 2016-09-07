@@ -11,3 +11,19 @@ gulp.task('css', function () {
     ]))
     .pipe(gulp.dest('assets'))
 })
+
+gulp.task('generate-service-worker', function (callback) {
+  var path = require('path')
+  var swPrecache = require('sw-precache')
+  var rootDir = '.'
+
+  swPrecache.write(path.join(rootDir, 'sw.js'), {
+    staticFileGlobs: [
+      rootDir + '/index.html',
+      rootDir + '/assets/**/*.{js,html,css,png,jpg,gif}'
+    ],
+    stripPrefix: rootDir
+  }, callback)
+})
+
+gulp.task('build', ['css', 'generate-service-worker'])
