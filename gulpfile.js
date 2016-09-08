@@ -6,7 +6,7 @@ gulp.task('css', function () {
   return gulp.src('assets/index.src.css')
     .pipe(rename('index.css'))
     .pipe(postcss([
-      require('autoprefixer'),
+      require('autoprefixer')({ browsers: ['last 3 versions'] }),
       require('cssnano')
     ]))
     .pipe(gulp.dest('assets'))
