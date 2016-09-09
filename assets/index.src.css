@@ -106,7 +106,6 @@ header {
 
 .section-title {
   font-size: 2rem;
-  font-weight: lighter;
   margin: 7rem 0;
   text-align: center;
 }
@@ -232,7 +231,7 @@ footer .content-wrapper {
   header { text-align: center; }
   header .nav { display: none; }
 
-  .hero { font-size: 1.8rem; font-weight: lighter }
+  .hero { font-size: 1.8rem }
 
   .section-title { font-size: 1.5rem; }
 
