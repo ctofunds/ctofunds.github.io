@@ -73,7 +73,7 @@ header {
 }
 
 .services-list {
-  height: 200px;
+  height: 14rem;
   background-color: rgba(255,255,255, 0.8);
 }
 
@@ -88,12 +88,18 @@ header {
 }
 
 .service-item dt, .service-item dd {
-  margin: 1.5em 0;
+  margin: 2.2rem 0;
 }
 
 .service-item dt {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: bold;
+}
+
+.service-item dd {
+  font-size: 1rem;
+  line-height: 2.2rem;
+  margin-bottom: 0;
 }
 
 /* SECTION: OUR-TEAM */
@@ -219,6 +225,22 @@ footer .content-wrapper {
 
 .footer-right {
   float: right;
+}
+
+/* wide screen */
+
+@media (min-width: 1600px) {
+  html {
+    font-size: 16px
+  }
+
+  .content-wrapper {
+    width: 1200px;
+  }
+
+  .hero {
+    font-size: 3rem
+  }
 }
 
 /* Mobile */
