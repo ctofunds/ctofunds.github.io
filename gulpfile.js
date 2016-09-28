@@ -19,7 +19,7 @@ gulp.task('generate-service-worker', function (callback) {
 
   swPrecache.write(path.join(rootDir, 'service-worker.js'), {
     staticFileGlobs: [
-      rootDir + '/index.html',
+      // rootDir + '/index.html',
       rootDir + '/assets/**/*.{js,html,css,png,jpg,gif}'
     ],
     stripPrefix: rootDir
@@ -27,3 +27,11 @@ gulp.task('generate-service-worker', function (callback) {
 })
 
 gulp.task('build', ['css', 'generate-service-worker'])
+
+gulp.task('watch', function () {
+  return gulp.watch([
+    'index.html',
+    'assets/**/*',
+    '!assets/index.css'
+  ], ['build'])
+})

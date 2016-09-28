@@ -73,18 +73,17 @@ header {
 }
 
 .services-list {
-  height: 14rem;
+  height: 16rem;
   background-color: rgba(255,255,255, 0.8);
 }
 
 .services-list .content-wrapper {
   display: flex;
+  justify-content: space-around;
 }
 
 .service-item {
-  flex: 1;
-  min-width: 280px;
-  padding-left: 2em;
+  min-width: 300px;
 }
 
 .service-item dt, .service-item dd {
@@ -108,6 +107,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #F1F2F3;
 }
 
 .section-title {
@@ -180,7 +180,6 @@ header {
 
 #our-clients {
   padding: 1px 0;
-  background-color: #EEE;
   text-align: center;
 }
 
@@ -257,9 +256,9 @@ footer .content-wrapper {
 
   .section-title { font-size: 1.5rem; }
 
-  #our-service { height: calc(100% + 400px); }
+  #our-service { height: calc(100% + 16rem); }
 
-  .services-list { height: 600px; }
+  .services-list { height: 32rem; }
   .services-list .content-wrapper {
     flex-direction: column;
     align-items: center;
