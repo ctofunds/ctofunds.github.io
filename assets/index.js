@@ -3,7 +3,6 @@
 
   function insertClientsHTML (clientsEl) {
     var clients = [
-      ['方糖小镇', 'ftxz.png'],
       ['小马运动', 'xmyd.png'],
       ['鲁班养车', 'lbyc.png'],
       ['工头帮', 'gtb.png'],
@@ -14,7 +13,9 @@
       ['鱼大大', 'ydd.png'],
       ['Good Talk', 'goodtalk.png'],
       ['二手汇', 'esh.png'],
-      ['楼小二', 'lxe.png']
+      ['楼小二', 'lxe.png'],
+      ['名医主刀', 'myzd.png'],
+      ['优拜单车', 'ybdc.png']
     ]
     var raw = ''
     clients.forEach(function (item) {
