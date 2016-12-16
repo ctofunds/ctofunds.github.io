@@ -15,7 +15,8 @@
       ['二手汇', 'esh.png'],
       ['楼小二', 'lxe.png'],
       ['名医主刀', 'myzd.png'],
-      ['优拜单车', 'ybdc.png']
+      ['优拜单车', 'ybdc.png'],
+      ['方糖小镇', 'ftxz.png']
     ]
     var raw = ''
     clients.forEach(function (item) {
