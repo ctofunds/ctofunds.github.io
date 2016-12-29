@@ -37,7 +37,7 @@
             <dt>创业者的技术合伙人</dt>
             <dd>
               <ul>
-                <li>CTO顾问的一对一诊脉服务（如组织架构、研发流程、系统架构及当前系统瓶颈分析）</li>
+                <li>CTO顾问的一对一诊脉服务<br/>（组织架构、研发流程、系统架构及当前系统瓶颈分析等）</li>
                 <li>商业模型和执行策略、技术规划、系统架构、研发团队建设等内容</li>
                 <li>技术专家每周的贴身跟进服务</li>
                 <li>核心技术骨干的技术面试评估</li>
@@ -180,23 +180,23 @@
 
     <script type="text/javascript" src="assets/index.js"></script>
     <script>
-      // if ('serviceWorker' in navigator) {
-      //   navigator.serviceWorker.register('/service-worker.js').then(function() {
-      //     console.log("Service Worker Registered");
-      //   })
-      // }
       if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
-          // registration worked
-          console.log('Registration succeeded.');
-          registration.unregister().then(function(boolean) {
-            // if boolean = true, unregister is successful
-          });
-        }).catch(function(error) {
-          // registration failed
-          console.log('Registration failed with ' + error);
-        });
-      };
+        navigator.serviceWorker.register('/service-worker.js').then(function() {
+          console.log("Service Worker Registered");
+        })
+      }
+      // if ('serviceWorker' in navigator) {
+      //   navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+      //     // registration worked
+      //     console.log('Registration succeeded.');
+      //     // registration.unregister().then(function(boolean) {
+      //     //   // if boolean = true, unregister is successful
+      //     // });
+      //   }).catch(function(error) {
+      //     // registration failed
+      //     console.log('Registration failed with ' + error);
+      //   });
+      // };
     </script>
   </body>
 </html>

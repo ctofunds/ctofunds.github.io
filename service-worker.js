@@ -12,20 +12,7 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
-*/
-
-// DO NOT EDIT THIS GENERATED OUTPUT DIRECTLY!
-// This file should be overwritten as part of your build process.
-// If you need to extend the behavior of the generated service worker, the best approach is to write
-// additional code and include it using the importScripts option:
-//   https://github.com/GoogleChrome/sw-precache#importscripts-arraystring
-//
-// Alternatively, it's possible to make changes to the underlying template file and then use that as the
-// new base for generating output, via the templateFilePath option:
-//   https://github.com/GoogleChrome/sw-precache#templatefilepath-string
-//
-// If you go that route, make sure that whenever you update your sw-precache dependency, you reconcile any
-// changes made to this original template file with your modified copy.
+ */
 
 // This generated service worker JavaScript will precache your site's resources.
 // The code needs to be saved in a .js file at the top-level of your site, and registered
@@ -37,7 +24,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["/assets/avatars/icon-cy.jpg","9240f25d85f5ecbbdcafc7c065587f2c"],["/assets/avatars/icon-gsh.jpg","0f1be62f0d1e227120cef24f398a5ea8"],["/assets/avatars/icon-hj.jpg","510bb2d17ecad245b21e032f46a8bbf6"],["/assets/avatars/icon-hx.jpg","f8b1f82dc9cb53774586a331f5d52341"],["/assets/avatars/icon-hx.png","c8f07b0ec953ee3c121a61d012eec30d"],["/assets/avatars/icon-lj.jpg","74a2a1f954d28e664c8f58e6ff73a0fa"],["/assets/avatars/icon-pxl.jpg","5a99c0bbbe0b10a403c7d4d76c1c4f4a"],["/assets/avatars/icon-yym.jpg","74b316cb31242c66c4c51f291eb62cea"],["/assets/clients/esh.png","1530bf918a50183f6574f23799aa1a49"],["/assets/clients/ftxz.png","5013db01f264c322c37914d625914143"],["/assets/clients/goodtalk.png","fac2b5af7de0136efc4289eb0824f607"],["/assets/clients/gtb.png","cdb921433071928809227c1845bcfa25"],["/assets/clients/ibaby.png","111590db93d7658ada09b84a18f83ae2"],["/assets/clients/lbyc.png","b3c5a0e2cd7df37ddcf15b91586a6574"],["/assets/clients/lxe.png","b0b7e0d7bc134567019bf3fce17b8cd6"],["/assets/clients/myzd.png","f08df781fac9413d73c13b69d757fa7a"],["/assets/clients/tbs.png","ef2f83a9130cfcea65f432b7d41505de"],["/assets/clients/xaap.png","89fe086dddeaf61a56ae856146b20124"],["/assets/clients/xmyd.png","6788b979b082c88fb14b37c4c14fbb03"],["/assets/clients/ybdc.png","297fd531d2ed294a4419f73451015809"],["/assets/clients/ydd.png","110df364c8ef25833afd509ee49fe578"],["/assets/clients/yky.png","1e3bcbaf1dc66222231abe78a11e3f85"],["/assets/dd-clients.jpg","8e276cfd8bf889d68298eeca923589fb"],["/assets/funds.jpg","a8aee45a555daeca5cc7ea98de587f0c"],["/assets/index.css","6c50c90c4bf212c17ca8670fc93a0aa5"],["/assets/index.js","a85f3bd18bb3cfba37e6a65366143f39"],["/assets/index.src.css","e9e701a19f87cce54d73e19b29250d0b"],["/assets/mbg-light.jpg","619b17a8a445e1cb8a5a18c1ef74f492"],["/assets/mbg.jpg","3c37539e82e647049fc3fe1e6fe7663a"],["/assets/mountains-light.jpg","a89775980367a6fe2bc012d6ad7941fe"]];
+var precacheConfig = [["/assets/avatars/icon-cy.jpg","9240f25d85f5ecbbdcafc7c065587f2c"],["/assets/avatars/icon-gsh.jpg","0f1be62f0d1e227120cef24f398a5ea8"],["/assets/avatars/icon-hj.jpg","510bb2d17ecad245b21e032f46a8bbf6"],["/assets/avatars/icon-hx.jpg","f8b1f82dc9cb53774586a331f5d52341"],["/assets/avatars/icon-hx.png","c8f07b0ec953ee3c121a61d012eec30d"],["/assets/avatars/icon-lj.jpg","74a2a1f954d28e664c8f58e6ff73a0fa"],["/assets/avatars/icon-pxl.jpg","5a99c0bbbe0b10a403c7d4d76c1c4f4a"],["/assets/avatars/icon-yym.jpg","74b316cb31242c66c4c51f291eb62cea"],["/assets/clients/esh.png","1530bf918a50183f6574f23799aa1a49"],["/assets/clients/ftxz.png","5013db01f264c322c37914d625914143"],["/assets/clients/goodtalk.png","fac2b5af7de0136efc4289eb0824f607"],["/assets/clients/gtb.png","cdb921433071928809227c1845bcfa25"],["/assets/clients/ibaby.png","111590db93d7658ada09b84a18f83ae2"],["/assets/clients/lbyc.png","b3c5a0e2cd7df37ddcf15b91586a6574"],["/assets/clients/lxe.png","b0b7e0d7bc134567019bf3fce17b8cd6"],["/assets/clients/myzd.png","f08df781fac9413d73c13b69d757fa7a"],["/assets/clients/tbs.png","ef2f83a9130cfcea65f432b7d41505de"],["/assets/clients/xaap.png","89fe086dddeaf61a56ae856146b20124"],["/assets/clients/xmyd.png","6788b979b082c88fb14b37c4c14fbb03"],["/assets/clients/ybdc.png","297fd531d2ed294a4419f73451015809"],["/assets/clients/ydd.png","110df364c8ef25833afd509ee49fe578"],["/assets/clients/yky.png","1e3bcbaf1dc66222231abe78a11e3f85"],["/assets/dd-clients.jpg","8e276cfd8bf889d68298eeca923589fb"],["/assets/funds.jpg","a8aee45a555daeca5cc7ea98de587f0c"],["/assets/index.css","3ff55368e4f9b0fafde6659b1f7ffeaa"],["/assets/index.js","a85f3bd18bb3cfba37e6a65366143f39"],["/assets/index.src.css","e9e701a19f87cce54d73e19b29250d0b"],["/assets/mbg-light.jpg","619b17a8a445e1cb8a5a18c1ef74f492"],["/assets/mbg.jpg","3c37539e82e647049fc3fe1e6fe7663a"],["/assets/mountains-light.jpg","a89775980367a6fe2bc012d6ad7941fe"]];
 var cacheName = 'sw-precache-v2--' + (self.registration ? self.registration.scope : '');
 
 
@@ -140,10 +127,8 @@ self.addEventListener('install', function(event) {
         );
       });
     }).then(function() {
-      
       // Force the SW to transition from installing -> active state
       return self.skipWaiting();
-      
     })
   );
 });
@@ -163,9 +148,7 @@ self.addEventListener('activate', function(event) {
         );
       });
     }).then(function() {
-      
       return self.clients.claim();
-      
     })
   );
 });
@@ -207,12 +190,7 @@ self.addEventListener('fetch', function(event) {
     if (shouldRespond) {
       event.respondWith(
         caches.open(cacheName).then(function(cache) {
-          return cache.match(urlsToCacheKeys.get(url)).then(function(response) {
-            if (response) {
-              return response;
-            }
-            throw Error('The cached response that was expected is missing.');
-          });
+          return cache.match(urlsToCacheKeys.get(url));
         }).catch(function(e) {
           // Fall back to just fetch()ing the request if some unexpected error
           // prevented the cached response from being valid.
