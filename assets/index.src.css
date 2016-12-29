@@ -59,10 +59,9 @@ header {
 /* SECTION: SERVICE */
 
 #our-service {
-  height: 100%;
+  min-height: 100%;
   background: url(mbg-light.jpg) no-repeat center;
   background-size: cover;
-  height: 100%;
 }
 
 #our-service .content-wrapper {
@@ -97,25 +96,24 @@ header {
 }
 
 .service-item {
-  min-width: 300px;
+  max-width: 460px;
   background-color: rgba(255,255,255, 0.5);
-  padding: 1rem 2.4rem;
+  padding: 0.5rem 3rem;
+  margin: 0 auto;
 }
 
 .service-item dt, .service-item dd {
-  margin: 2.2rem 0;
+  margin: 2rem 0;
 }
 
 .service-item dt {
   font-size: 1.5rem;
   font-weight: bold;
-  padding: 0 0.8rem;
 }
 
 .service-item dd {
   font-size: 1rem;
   line-height: 2.2rem;
-  margin-bottom: 0;
 }
 
 .service-item ul {
@@ -392,5 +390,11 @@ footer .content-wrapper {
 
   footer {
     padding: 0 2rem;
+  }
+}
+
+@media (max-width: 350px) {
+  #our-service {
+    height: 128%;
   }
 }
