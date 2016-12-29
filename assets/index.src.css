@@ -43,11 +43,11 @@ header {
 
 .slogan {
   font-weight: lighter;
-  color: #555;
-  font-size: 15px;
+  color: #888;
+  font-size: 14px;
   position: relative;
   top: -1px;
-  padding: 0 4px;
+  padding: 0 5px;
 }
 
 .nav {
@@ -93,6 +93,7 @@ header {
 .hero h2 {
   font-size: 2rem;
   letter-spacing: 0.5rem;
+  margin: 1.1em 0;
 }
 
 .hero span {
@@ -406,13 +407,20 @@ footer .content-wrapper {
   footer {
     padding: 0 2rem;
   }
+  .logo {
+    line-height: 20px;
+    position: relative;
+    top: 10px;
+  }
+  .logo .slogan {
+    display: block;
+    position: relative;
+    top: 5px;
+  }
 }
 
 @media (max-width: 350px) {
   html, body {
     font-size: 12px;
-  }
-  #our-service {
-    height: 128%;
   }
 }
