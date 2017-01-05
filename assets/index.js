@@ -3,8 +3,6 @@
 
   function insertClientsHTML (clientsEl) {
     var clients = [
-      ['小马运动', 'xmyd.png'],
-      ['鲁班养车', 'lbyc.png'],
       ['工头帮', 'gtb.png'],
       ['小艾爱跑', 'xaap.png'],
       ['兔博士', 'tbs.png'],
