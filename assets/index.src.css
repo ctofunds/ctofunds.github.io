@@ -244,18 +244,37 @@ header {
   padding: 1px 0;
 }
 
-#fund-clients .section-title {
-  margin-bottom: 4rem;
+#fund-clients .content-wrapper {
+  display: flex;
 }
 
-#fund-clients ul {
+.dd-left, .dd-right {
+  flex: 1;
+}
+
+.dd-left .section-title {
+  padding: 20% 0 0 0;
+}
+
+#fund-clients .section-title {
+  margin-bottom: 4rem;
+  line-height: 1.5em;
+}
+
+.dd-intro {
+  display: flex;
+}
+
+.dd-intro ul {
+  display: inline-block;
   margin: 0 auto;
   list-style: none;
-  text-align: center;
+  text-align: left;
   padding: 0;
-  font-size: 18px;
+  font-size: 1.2rem;
   line-height: 2em;
 }
+
 
 .dd-intro li::before {
   content: '•';
@@ -265,6 +284,11 @@ header {
 .dd-clients {
   text-align: center;
   margin-bottom: 6rem;
+}
+
+.dd-clients img {
+  max-width: 75%;
+  height: auto;
 }
 
 /* SECTION: CONTACT */
@@ -399,9 +423,12 @@ footer .content-wrapper {
     min-width: 100px;
   }
 
-  .dd-clients img {
-    max-width: 100%;
-    height: auto;
+  #fund-clients .content-wrapper {
+    flex-direction: column;
+  }
+
+  .dd-left .section-title {
+    padding: 0;
   }
 
   footer {
