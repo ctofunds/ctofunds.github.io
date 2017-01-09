@@ -1,5 +1,6 @@
 (function () {
   var clientsEl = document.querySelector('.clients')
+  var headerEl = document.querySelector('header')
 
   function insertClientsHTML (clientsEl) {
     var clients = [
@@ -31,4 +32,12 @@
     window.removeEventListener('scroll', onFirstScroll)
   }
   window.addEventListener('scroll', onFirstScroll)
+
+  function onEveryScroll () {
+    var opacity = window.scrollY / 400 + 0.6
+    opacity = opacity > 1 ? 1 : opacity
+    headerEl.style.backgroundColor = 'rgba(255,255,255,' + opacity + ')'
+    // console.log(window.scrollY)
+  }
+  window.addEventListener('scroll', onEveryScroll)
 })()
