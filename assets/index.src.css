@@ -231,6 +231,7 @@ header {
   display: inline-block;
   margin: 2rem 4rem;
   text-align: left;
+  vertical-align: top;
 }
 
 .client-card img {
