@@ -68,7 +68,7 @@ header {
 /* SECTION: SERVICE */
 
 #our-service {
-  height: 100%;
+  height: 100vh;
   background: url(mbg-light.jpg) no-repeat center;
   background-size: cover;
 }
@@ -315,7 +315,7 @@ header {
 
 #contact-us {
   text-align: center;
-  height: calc(100% - 85px);
+  height: calc(100vh - 85px);
   min-height: 18rem;
   display: flex;
   align-items: center;

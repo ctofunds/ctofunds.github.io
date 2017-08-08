@@ -1,20 +1,20 @@
 {
   "name": "ctofunds.github.io",
-  "version": "1.0.0",
-  "description": "New home of ctofunds.",
-  "main": "index.js",
+  "version": "2.0.0",
+  "description": "New home of HiCTO.",
+  "repository": "ctofunds/ctofunds.github.io",
+  "private": true,
   "scripts": {
-    "build": "gulp build",
-    "watch": "gulp watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next",
+    "build": "next build && next export -o dist",
+    "deploy": "gh-pages -d dist -b master"
   },
-  "repository": "ctofunds/ctofunds.github.io.git",
+  "dependencies": {
+    "next": "^3.0.1-beta.21",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
   "devDependencies": {
-    "autoprefixer": "^6.4.1",
-    "cssnano": "^3.7.4",
-    "gulp": "^3.9.1",
-    "gulp-postcss": "^6.1.1",
-    "gulp-rename": "^1.2.2",
-    "sw-precache": "^4.0.0"
+    "gh-pages": "^1.0.0"
   }
 }
