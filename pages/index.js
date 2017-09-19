@@ -1,4 +1,6 @@
 import PageWrapper from '../components/page-wrapper.js'
+import Header from '../components/header.js'
+import Footer from '../components/footer.js'
 import IntroHero from '../components/intro-hero.js'
 import IntroTeam from '../components/intro-team.js'
 import IntroClientStartups from '../components/intro-client-startups.js'
@@ -10,11 +12,8 @@ export default () => {
       <Header />
 
       <IntroHero />
-
       <IntroTeam />
-
       <IntroClientStartups />
-
       <IntroClientDD />
 
       <section id='contact-us'>
@@ -24,14 +23,7 @@ export default () => {
         </div>
       </section>
 
-      <footer>
-        <div className='content-wrapper'>
-          © 2017 HiCTO
-          <div className='footer-right'>
-            <a href='http://www.lagou.com/gongsi/95931.html'>加入 HiCTO</a>
-          </div>
-        </div>
-      </footer>
+      <Footer />
 
       <style jsx>{`
         .body-wrapper {
