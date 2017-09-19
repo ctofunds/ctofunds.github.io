@@ -1,16 +1,16 @@
 import axios from 'axios'
-import snarkdown from 'snarkdown'
 import PageWrapper from '../components/page-wrapper.js'
 import Header from '../components/header.js'
+import ArticleList from '../components/article-list.js'
+import Article from '../components/article.js'
 
-const Press = ({content, title}) => {
-  const articleHTML = snarkdown(content || '__content__')
+const Press = ({content, title, id}) => {
   return (
     <PageWrapper>
       <Header />
       <div className='content-wrapper'>
-        <h1>{title || '__TITLE__'}</h1>
-        <div dangerouslySetInnerHTML={{__html: articleHTML}} />
+        { !content && <ArticleList /> }
+        { content && <Article title={title} content={content} /> }
       </div>
       <style jsx>{`
         .content-wrapper {
@@ -22,10 +22,10 @@ const Press = ({content, title}) => {
 }
 
 Press.getInitialProps = async ({query}) => {
-  const { content, data } = query
+  const { id, content, data } = query
   const title = data && data.title
 
-  return { content, title }
+  return { id, content, title }
 }
 
 export default Press
