@@ -10,7 +10,7 @@
     "deploy": "gh-pages -d dist -b master"
   },
   "dependencies": {
-    "next": "^3.0.1-beta.21",
+    "next": "^3.2.2",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
   },

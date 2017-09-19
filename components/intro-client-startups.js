@@ -1,4 +1,4 @@
-const startups = require('../lib/startups.json')
+const startups = require('../libs/startups.json')
 
 export default () => {
   return (
