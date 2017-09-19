@@ -12,11 +12,13 @@
     "now": "now -n hicto -T hicto deploy dist"
   },
   "dependencies": {
+    "axios": "^0.16.2",
     "globby": "^6.1.0",
     "gray-matter": "^3.0.6",
     "next": "^3.2.2",
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react-dom": "^15.6.1",
+    "snarkdown": "^1.2.2"
   },
   "devDependencies": {
     "gh-pages": "^1.0.0"
