@@ -6,6 +6,7 @@ html, body {
   line-height: 1.8em;
   color: #333;
   background-color: #FFF;
+  scroll-behavior: smooth;
 }
 
 a { color: #555; text-decoration: none }
