@@ -1,5 +1,4 @@
-import Head from 'next/head'
-import Header from '../components/header.js'
+import PageWrapper from '../components/page-wrapper.js'
 import IntroHero from '../components/intro-hero.js'
 import IntroTeam from '../components/intro-team.js'
 import IntroClientStartups from '../components/intro-client-startups.js'
@@ -7,13 +6,7 @@ import IntroClientDD from '../components/intro-client-dd.js'
 
 export default () => {
   return (
-    <div className='body-wrapper'>
-      <Head>
-        <title>HiCTO</title>
-        <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=yes' />
-        <link rel='stylesheet' href='static/index.css' media='screen' />
-      </Head>
-
+    <PageWrapper>
       <Header />
 
       <IntroHero />
@@ -45,6 +38,6 @@ export default () => {
           height: 100%
         }
       `}</style>
-    </div>
+    </PageWrapper>
   )
 }
