@@ -7,7 +7,9 @@
   "scripts": {
     "dev": "next",
     "build": "next build && next export -o dist",
-    "deploy": "gh-pages -d dist -b master"
+    "deploy": "gh-pages -d dist -b master",
+    "prenow": "npm run build",
+    "now": "now -n hicto -T hicto deploy dist"
   },
   "dependencies": {
     "next": "^3.2.2",

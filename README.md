@@ -1,3 +1,6 @@
+# HiCTO homepage
+
 ```
-npm run build
+yarn build
+serve dist
 ```
