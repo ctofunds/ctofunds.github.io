@@ -226,41 +226,6 @@ header {
   align-items: flex-start;
 }
 
-.client-card {
-  width: 350px;
-  height: 140px;
-  display: inline-block;
-  margin: 2rem 4rem;
-  text-align: left;
-  vertical-align: top;
-}
-
-.client-card img {
-  width: 60px;
-  float: left;
-  margin: 1.2em 0;
-}
-
-.client-card em {
-  display: block;
-  font-weight: bold;
-  font-style: normal;
-  margin-bottom: 0.2em;
-}
-
-.client-card .status {
-  color: #AAA;
-  font-weight: normal;
-  font-style: normal;
-  /*float: right;*/
-  margin-left: 0.3rem;
-}
-
-.client-card p {
-  margin-left: 80px;
-  line-height: 24px;
-}
-
 #fund-clients {
   padding: 1px 0;
 }
