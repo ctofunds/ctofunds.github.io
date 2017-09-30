@@ -4,7 +4,8 @@ const news = require('./libs/news-list.js')
 module.exports = {
   exportPathMap: function () {
     const map = {
-      '/': { page: '/' }
+      '/': { page: '/' },
+      '/press': { page: '/press' }
     }
 
     return news.reduce((mapping, current) => {
