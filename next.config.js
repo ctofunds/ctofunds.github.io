@@ -1,5 +1,5 @@
 const path = require('path')
-const news = require('./libs/news-list.js')
+const news = require('./tools/news-gen.js')
 
 module.exports = {
   exportPathMap: function () {
@@ -10,7 +10,10 @@ module.exports = {
 
     return news.reduce((mapping, current) => {
       const name = path.parse(current.file).name
-      mapping['/press/' + name] = { page: '/press', query: current }
+      mapping['/press/aritcle/' + name] = {
+        page: '/press/article',
+        query: current
+      }
       return mapping
     }, map)
   }

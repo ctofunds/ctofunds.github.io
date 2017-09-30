@@ -1,8 +1,8 @@
 import Head from 'next/head'
 
-export default ({ children }) => {
+export default ({ children, className, ...restProps }) => {
   return (
-    <div className='body-wrapper'>
+    <div className={'body-wrapper ' + className} {...restProps}>
       <Head>
         <title>HiCTO</title>
         <meta
