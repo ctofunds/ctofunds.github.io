@@ -6,7 +6,9 @@
   "private": true,
   "scripts": {
     "dev": "next",
-    "build": "next build && next export -o dist",
+    "start": "next start",
+    "now-build": "next build",
+    "build": "node tools/news-gen.js && next build && next export -o dist",
     "deploy": "gh-pages -d dist -b master",
     "prenow": "npm run build",
     "now": "now -n hicto -T hicto deploy dist"

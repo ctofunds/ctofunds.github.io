@@ -1,5 +1,5 @@
 const path = require('path')
-const news = require('./tools/news-gen.js')
+const news = require('./libs/news.json')
 
 module.exports = {
   exportPathMap: function () {
