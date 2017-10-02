@@ -6,7 +6,7 @@ export default () => {
       <div className='content-wrapper'>
         <div className='section-title'>他们已经在使用 HiCTO 的服务</div>
         <div className='clients'>
-          { startups.map(st => <Startup meta={st} />) }
+          { startups.map(st => <Startup key={st[0]} meta={st} />) }
         </div>
       </div>
     </section>
@@ -19,7 +19,7 @@ const Startup = ({meta}) => {
     <div className='client-card'>
       <img src={'static/clients/' + icon} alt='HiCTO Client' />
       <p>
-        <em>{name} <i class='status'>{funds && `(${funds})`}</i></em>
+        <em>{name} <i className='status'>{funds && `(${funds})`}</i></em>
         {desc} <br />
         {intro}
       </p>

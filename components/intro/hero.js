@@ -1,6 +1,7 @@
 export default () => {
   return (
     <section id='our-service'>
+      <img src='/static/mbg-light.jpg' />
       <div className='content-wrapper'>
         <div className='hero'>
           <h2>创业者的技术合伙人</h2>
@@ -20,6 +21,15 @@ export default () => {
           </dl>
         </div>
       </div>
+      <style jsx>{`
+        img {
+          position: absolute;
+          height: 1px;
+          width: 1px;
+          top: -1000px;
+          z-index: 0;
+        }
+      `}</style>
     </section>
   )
 }
