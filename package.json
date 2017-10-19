@@ -10,8 +10,9 @@
     "now-build": "next build",
     "build": "node tools/news-gen.js && next build && next export -o dist",
     "deploy": "gh-pages -d dist -b master",
+    "now:static": "now -n hi -T hicto deploy dist",
     "prenow": "npm run build",
-    "now": "now -n hicto -T hicto deploy dist"
+    "now": "now -n hicto -T hicto"
   },
   "dependencies": {
     "axios": "^0.16.2",
