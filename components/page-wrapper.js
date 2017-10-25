@@ -4,7 +4,7 @@ export default ({ children, className, ...restProps }) => {
   return (
     <div className={'body-wrapper ' + className} {...restProps}>
       <Head>
-        <title>HiCTO</title>
+        <title>HiCTO - 创业者的合伙人 | 技术风投</title>
         <meta
           name='viewport'
           content='width=device-width, initial-scale=1, user-scalable=yes'
