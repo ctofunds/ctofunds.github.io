@@ -81,28 +81,6 @@ header {
   height: 100%;
 }
 
-.hero {
-  flex: 1;
-  text-align: center;
-  line-height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero h2 {
-  font-size: 2rem;
-  letter-spacing: 0.5rem;
-  margin: 1.1em 0;
-}
-
-.hero span {
-  font-size: 1.6rem;
-  line-height: 1.6em;
-  padding: 0 1em;
-}
-
 .services-list {
   width: 50%;
   display: flex;
@@ -215,16 +193,6 @@ header {
 }
 
 /* SECTION: OUR CLIENTS */
-
-#our-clients {
-  padding: 1px 0;
-  text-align: center;
-}
-
-.clients {
-  padding-bottom: 8rem;
-  align-items: flex-start;
-}
 
 #fund-clients {
   padding: 1px 0;
@@ -354,23 +322,17 @@ footer .content-wrapper {
   .content-wrapper {
     width: 1200px;
   }
-
-  .hero {
-    font-size: 3rem
-  }
 }
 
 /* Mobile */
 
 @media (max-width: 900px) {
+  html { font-size: 13px }
   body { color: #333; }
   .content-wrapper { width: inherit; }
 
   header { position: absolute; text-align: center }
   .nav { display: none }
-
-  #our-service .content-wrapper { flex-direction: column }
-  .hero { font-size: 1.8rem; height: 20% }
 
   .section-title { font-size: 1.5rem; }
 

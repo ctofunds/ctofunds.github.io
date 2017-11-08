@@ -9,6 +9,23 @@ export default () => {
           { startups.map(st => <Startup key={st[0]} meta={st} />) }
         </div>
       </div>
+      <style jsx>{`
+        #our-clients {
+          padding: 1px 0;
+          text-align: center;
+        }
+
+        .clients {
+          padding-bottom: 8rem;
+          text-align: center;
+        }
+
+        @media (max-width: 500px) {
+          .clients {
+            text-align: left;
+          }
+        }
+      `}</style>
     </section>
   )
 }
@@ -50,13 +67,19 @@ const Startup = ({meta}) => {
           color: #AAA;
           font-weight: normal;
           font-style: normal;
-          /*float: right;*/
           margin-left: 0.3rem;
         }
 
         .client-card p {
           margin-left: 80px;
           line-height: 24px;
+        }
+
+        @media (max-width: 500px) {
+          .client-card {
+            width: auto;
+            margin: 1rem;
+          }
         }
       `}</style>
     </div>

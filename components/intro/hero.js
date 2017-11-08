@@ -5,7 +5,7 @@ export default () => {
       <div className='content-wrapper'>
         <div className='hero'>
           <h2>创业者的技术合伙人</h2>
-          <span>为创业者提供<br />可落地的全方位技术咨询服务</span>
+          <p>为创业者提供<br />可落地的全方位技术咨询服务</p>
         </div>
         <div className='services-list'>
           <dl className='service-item'>
@@ -28,6 +28,39 @@ export default () => {
           width: 1px;
           top: -1000px;
           z-index: 0;
+        }
+
+        .hero {
+          flex: 1;
+          text-align: center;
+          line-height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .hero h2 {
+          font-size: 2rem;
+          letter-spacing: 0.5rem;
+          margin: 1.1em 0;
+        }
+
+        .hero p {
+          font-size: 1.6rem;
+          line-height: 1.6em;
+          padding: 0 1em;
+        }
+
+        @media (min-width: 1600px) {
+          .hero {
+            font-size: 3rem
+          }
+        }
+
+        @media (max-width: 900px) {
+          .content-wrapper { flex-direction: column }
+          .hero { font-size: 1.8rem; height: 20% }
         }
       `}</style>
     </section>
