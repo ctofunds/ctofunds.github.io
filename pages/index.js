@@ -25,9 +25,21 @@ export default () => {
 
       <Footer />
 
-      <style jsx>{`
+      <style jsx global>{`
         .body-wrapper {
           height: 100%
+        }
+
+        .section-title {
+          font-size: 2rem;
+          margin: 10rem 1.5rem 7rem 1.5rem;
+          text-align: center;
+        }
+
+        @media (max-width: 500px) {
+          .section-title {
+            margin: 6rem 1rem;
+          }
         }
       `}</style>
     </PageWrapper>
