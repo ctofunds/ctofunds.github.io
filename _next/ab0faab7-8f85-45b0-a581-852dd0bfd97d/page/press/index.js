@@ -1,6 +1,0 @@
-
-          window.__NEXT_REGISTER_PAGE('/press', function() {
-            var comp = module.exports=webpackJsonp([6],{364:function(e,t,a){e.exports=a(365)},365:function(e,t,a){"use strict";function n(e){return e&&e.__esModule?e:{default:e}}Object.defineProperty(t,"__esModule",{value:!0});var r=a(39),u=n(r),l=a(47),d=n(l),c=a(59),f=n(c),s=a(5),i=n(s),o=a(116),p=n(o),m=a(117),x=n(m),v=function(e){var t=e.list;return i.default.createElement(p.default,null,i.default.createElement(x.default,null),i.default.createElement("div",{className:"wrapper","data-jsx":324452251},t.map(function(e){return i.default.createElement("dl",{key:e.title,"data-jsx":324452251},i.default.createElement("dt",{"data-jsx":324452251},e.title),i.default.createElement("dd",{"data-jsx":324452251},e.content))})),i.default.createElement(f.default,{styleId:324452251,css:'.wrapper[data-jsx="324452251"]{padding:85px 0}'}))};v.getInitialProps=function(){var e=(0,d.default)(u.default.mark(function e(t){var a;t.req;return u.default.wrap(function(e){for(;;)switch(e.prev=e.next){case 0:return a=[{title:"eiyo",content:"heiyo"}],e.abrupt("return",{list:a});case 2:case"end":return e.stop()}},e,void 0)}));return function(t){return e.apply(this,arguments)}}(),t.default=v}},[364]);
-            return { page: comp.default }
-          })
-        
