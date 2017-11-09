@@ -118,80 +118,6 @@ header {
   padding-left: 1em;
 }
 
-/* SECTION: OUR-TEAM */
-
-#our-team {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.section-title {
-  font-size: 2rem;
-  margin: 10rem 1.5rem 7rem 1.5rem;
-  text-align: center;
-}
-
-.team-partners {
-  margin: 3rem 0 0 220px;
-}
-
-.partner-card {
-  position: relative;
-  padding-left: 120px;
-}
-
-.partner-icon {
-  position: absolute;
-  top: -3px;
-  left: 0;
-  width: 80px;
-  height: 80px;
-  border-radius: 40px;
-}
-
-.partner-title {
-  color: #AAA;
-  line-height: 1em;
-}
-
-.partner-name {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-top: 0;
-}
-
-.team-consults {
-  margin: 8rem 0;
-  display: flex;
-  justify-content: space-around;
-}
-
-.team-consults-title {
-  display: none;
-}
-
-.consult-card {
-  text-align: center;
-}
-
-.consult-icon {
-  width: 60px;
-  height: 60px;
-  display: none;
-}
-
-.consult-name {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.team-pros {
-  margin: 8rem 0;
-  font-size: 1.5rem;
-  text-align: center;
-}
-
 /* SECTION: OUR CLIENTS */
 
 #fund-clients {
@@ -340,32 +266,6 @@ footer .content-wrapper {
 
   .services-list { flex: 1; width: 100%; background-color: rgba(255,255,255,0.5) }
   .service-item { background-color: transparent }
-
-  .team-partners { margin: 4rem 2rem }
-  .partner-card { padding-left: 7.5rem }
-  .team-consults { display: block }
-
-  .team-consults-title {
-    display: block;
-    border-bottom: 1px dashed #CCC;
-    margin: 3rem;
-    font-size: 1.3rem;
-    font-weight: lighter;
-    line-height: 4em;
-    text-align: center;
-  }
-
-  .team-consults .partner-title {
-    display: none;
-  }
-
-  .consult-card {
-    margin: 5rem 0;
-  }
-
-  .team-pros {
-    padding: 0 2rem;
-  }
 
   .client-card {
     min-width: 100px;
