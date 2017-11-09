@@ -60,7 +60,7 @@ export default () => {
 
         @media (max-width: 900px) {
           .content-wrapper { flex-direction: column }
-          .hero { font-size: 1.8rem; height: 20% }
+          .hero { font-size: 1.8rem; padding: 1.5em 0 }
         }
       `}</style>
     </section>
