@@ -5,7 +5,7 @@
 const fs = require('fs')
 const path = require('path')
 const globby = require('globby')
-const matter = require('gray-matter')
+const matter = require('front-matter')
 
 const sourceDir = path.resolve(__dirname, '../static/news')
 const targetFile = path.resolve(__dirname, '../libs/news.json')
@@ -13,11 +13,11 @@ const targetFile = path.resolve(__dirname, '../libs/news.json')
 const list = globby
   .sync(sourceDir + '/**/*.md')
   .map(file => {
-    const { data } = matter.read(file, {excerpt: false})
+    const { attributes } = matter(fs.readFileSync(file, 'utf8'))
     const id = path.parse(file).name
     return {
       id,
-      ...data
+      ...attributes
     }
   })
 
