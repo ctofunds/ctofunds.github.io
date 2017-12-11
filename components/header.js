@@ -34,7 +34,7 @@ export default class Header extends React.Component {
             <a href='/#our-team'>关于我们</a>
             <a href='/#our-clients'>已服务企业</a>
             <a href='/#fund-clients'>已服务基金</a>
-            <a href='http://www.hicto.me/boardmeeting/news.html'>媒体新闻</a>
+            <a href='/press'>媒体新闻</a>
             <a href='/#contact-us'>联系我们</a>
           </div>
         </div>

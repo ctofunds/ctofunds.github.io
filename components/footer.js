@@ -5,6 +5,11 @@ export default () => {
         © 2017 HiCTO
         <div className='footer-right' />
       </div>
+      <style jsx>{`
+        footer {
+          text-align: center
+        }
+      `}</style>
     </footer>
   )
 }
