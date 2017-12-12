@@ -2,6 +2,7 @@ import axios from 'axios'
 import snarkdown from 'snarkdown'
 import PageWrapper from '../../components/page-wrapper.js'
 import Header from '../../components/header.js'
+import Footer from '../../components/footer.js'
 import format from 'date-fns/format'
 
 const newsList = require('../../libs/news.json')
@@ -16,6 +17,7 @@ const Article = ({date, title, content}) => {
         <h1>{title || '__TITLE__'}</h1>
         <div className='t' dangerouslySetInnerHTML={{ __html: articleHTML }} />
       </div>
+      <Footer />
       <style jsx>{`
         .article {
           margin: 165px auto;
