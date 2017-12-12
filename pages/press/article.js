@@ -2,6 +2,7 @@ import axios from 'axios'
 import snarkdown from 'snarkdown'
 import PageWrapper from '../../components/page-wrapper.js'
 import Header from '../../components/header.js'
+import format from 'date-fns/format'
 
 const newsList = require('../../libs/news.json')
 
@@ -11,18 +12,28 @@ const Article = ({date, title, content}) => {
     <PageWrapper>
       <Header />
       <div className='article'>
+        <span>{format(date, 'YYYY.MM.DD')}</span>
         <h1>{title || '__TITLE__'}</h1>
-        <span>{date}</span>
-        <div dangerouslySetInnerHTML={{ __html: articleHTML }} />
+        <div className='t' dangerouslySetInnerHTML={{ __html: articleHTML }} />
       </div>
       <style jsx>{`
         .article {
           margin: 165px auto;
-          max-width: 850px;
+          max-width: 650px;
+        }
+        span {
+          display: block;
+          text-align: center;
         }
         h1 {
           text-align: center;
-          margin: 3em 0;
+          margin: 1rem;
+          line-height: 1.4em;
+        }
+        .t {
+          margin: 3rem 1rem;
+          font-size: 1.2rem;
+          line-height: 2em;
         }
       `}</style>
     </PageWrapper>
@@ -39,7 +50,7 @@ Article.getInitialProps = async ({ req, query }) => {
 
   if (!req) {
     const { data } = await axios.get(`/static/news/${query.id}.md`)
-    meta.content = data.split('---').slice(2).join('')
+    meta.content = data
 
     const news = newsList.find(n => n.id === query.id) || {}
     meta.date = news.date
