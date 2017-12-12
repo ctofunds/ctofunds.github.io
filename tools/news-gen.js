@@ -14,12 +14,15 @@ const list = globby
   .sync(sourceDir + '/**/*.md')
   .map(file => {
     const { attributes } = matter(fs.readFileSync(file, 'utf8'))
-    const id = path.parse(file).name
+    const filename = path.parse(file).name
+
     return {
-      id,
-      ...attributes
+      id: filename,
+      ...attributes,
+      file
     }
   })
+  .sort((a, b) => (a - b))
 
 fs.writeFileSync(targetFile, JSON.stringify(list, null, 2))
 

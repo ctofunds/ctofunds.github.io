@@ -16,7 +16,11 @@ const PressIndex = () => {
           return (
             <li key={news.id}>
               <span>{format(news.date, 'YYYY.MM.DD')}</span>
-              <Link href={'/press/article?id=' + news.id}>{news.title}</Link>
+              <Link
+                href={'/press/article?id=' + news.id}
+                as={'/press/article/003'}>
+                <a>{news.title}</a>
+              </Link>
             </li>
           )
         })}

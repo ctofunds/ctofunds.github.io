@@ -1,5 +1,7 @@
+const fs = require('fs')
 const path = require('path')
 const news = require('./libs/news.json')
+const matter = require('front-matter')
 
 module.exports = {
   exportPathMap: function () {
@@ -10,9 +12,14 @@ module.exports = {
 
     return news.reduce((mapping, current) => {
       const name = path.parse(current.file).name
-      mapping['/press/aritcle/' + name] = {
+      const { body } = matter(fs.readFileSync(current.file, 'utf8'))
+
+      mapping['/press/article/' + name] = {
         page: '/press/article',
-        query: current
+        query: {
+          ...current,
+          content: body
+        }
       }
       return mapping
     }, map)
