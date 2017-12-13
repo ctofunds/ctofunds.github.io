@@ -22,7 +22,7 @@ const list = globby
       file
     }
   })
-  .sort((a, b) => (a - b))
+  .sort((a, b) => (b.id - a.id))
 
 fs.writeFileSync(targetFile, JSON.stringify(list, null, 2))
 
