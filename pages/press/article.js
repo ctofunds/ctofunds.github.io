@@ -1,6 +1,7 @@
 import axios from 'axios'
 import snarkdown from 'snarkdown'
 import PageWrapper from '../../components/page-wrapper.js'
+import PressFooter from '../../components/press-footer.js'
 import Header from '../../components/header.js'
 import Footer from '../../components/footer.js'
 import format from 'date-fns/format'
@@ -13,29 +14,44 @@ const Article = ({ date, title, content }) => {
     <PageWrapper>
       <Header />
       <div className='article'>
-        <span>{format(date, 'YYYY.MM.DD')}</span>
+        <span>{format(date, 'YYYY.MM.DD')} <i>HiCTO PRESS RELEASE</i></span>
         <h1>{title || '__TITLE__'}</h1>
-        <div className='t' dangerouslySetInnerHTML={{ __html: articleHTML }} />
+        <div
+          className='content'
+          dangerouslySetInnerHTML={{ __html: articleHTML }} />
+        <PressFooter />
       </div>
       <Footer />
       <style jsx>{`
         .article {
-          margin: 165px auto;
-          max-width: 650px;
+          margin: 125px auto;
+          padding: 1rem;
+          max-width: 750px;
         }
         span {
           display: block;
-          text-align: center;
+          text-align: left;
+          border-bottom: 1px solid #CCC;
+          color: #999;
+          font-style: italic;
+          padding: 0 2px;
+          margin-bottom: 6rem;
+        }
+        i {
+          float: right;
         }
         h1 {
           text-align: center;
-          margin: 1rem;
+          font-size: 2em;
+          margin: 1.5em 1rem;
           line-height: 1.4em;
         }
-        .t {
-          margin: 3rem 1rem;
+      `}</style>
+      <style global jsx>{`
+        .article {
           font-size: 1.2rem;
           line-height: 2em;
+          text-align: justify;
         }
       `}</style>
     </PageWrapper>
