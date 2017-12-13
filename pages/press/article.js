@@ -7,7 +7,7 @@ import format from 'date-fns/format'
 
 const newsList = require('../../libs/news.json')
 
-const Article = ({date, title, content}) => {
+const Article = ({ date, title, content }) => {
   const articleHTML = snarkdown(content || '__content__')
   return (
     <PageWrapper>
@@ -43,25 +43,21 @@ const Article = ({date, title, content}) => {
 }
 
 Article.getInitialProps = async ({ req, query }) => {
-  const meta = {
+  const news = newsList.find(n => n.id === query.id) || {}
+  const props = {
     id: query.id,
-    date: query.date || '--',
-    title: query.title || '404',
-    content: query.content || ''
+    date: query.date || news.date || '--',
+    title: query.title || news.title || '404',
+    content: query.content || news.content
   }
 
-  if (!req) {
-    const { data } = await axios.get(`/static/news/${query.id}.md`)
-    meta.content = data
-
-    const news = newsList.find(n => n.id === query.id) || {}
-    meta.date = news.date
-    meta.title = news.title
-
-    return meta
+  if (!props.content) {
+    const host = req ? 'http://localhost:3000' : ''
+    const markdownSource = `${host}/static/news/${query.id}.md`
+    props.content = await axios.get(markdownSource).then(res => res.data)
   }
 
-  return meta
+  return props
 }
 
 export default Article
