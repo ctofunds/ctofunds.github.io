@@ -1,5 +1,5 @@
 import axios from 'axios'
-import snarkdown from 'snarkdown'
+import marked from 'marked'
 import PageWrapper from '../../components/page-wrapper.js'
 import PressFooter from '../../components/press-footer.js'
 import Header from '../../components/header.js'
@@ -9,7 +9,7 @@ import format from 'date-fns/format'
 const newsList = require('../../libs/news.json')
 
 const Article = ({ date, title, content }) => {
-  const articleHTML = snarkdown(content || '__content__')
+  const articleHTML = marked(content || '__content__')
   return (
     <PageWrapper>
       <Header />
@@ -52,6 +52,16 @@ const Article = ({ date, title, content }) => {
           font-size: 1.2rem;
           line-height: 2em;
           text-align: justify;
+        }
+        .article h2 {
+          margin-top: 1em;
+        }
+        .article img {
+          max-width: 100%;
+          margin-left: -2em;
+        }
+        .article p {
+          text-indent: 2em;
         }
       `}</style>
     </PageWrapper>

@@ -8,13 +8,16 @@ export default () => (
     </p>
 
     <h2>媒体联系</h2>
-    <p>
+    <p className='no-indent'>
       联系人：Ellen<br />
       邮　箱：bd@ctofunds.com<br />
     </p>
     <style jsx>{`
       p {
         margin: 0;
+      }
+      .no-indent {
+        text-indent: 0;
       }
     `}</style>
   </div>

@@ -6,15 +6,21 @@
     "file": "/Users/Amio/git/ctofunds.github.io/static/news/005.md"
   },
   {
-    "id": "002",
+    "id": "003",
     "title": "HiCTO与名医主刀签订合作协议，加速产品升级",
     "date": "2016-11-23",
+    "file": "/Users/Amio/git/ctofunds.github.io/static/news/003.md"
+  },
+  {
+    "id": "002",
+    "title": "让技术团队至少少走半年弯路 | HiCTO私董会",
+    "date": "2016-08-30",
     "file": "/Users/Amio/git/ctofunds.github.io/static/news/002.md"
   },
   {
     "id": "001",
-    "title": "鱼大大获得战略融资，估值超过3亿",
-    "date": "2016-09-01",
+    "title": "前大众点评CTO龚世海再创业：技术研发是被低估的武器",
+    "date": "2016-09-26",
     "file": "/Users/Amio/git/ctofunds.github.io/static/news/001.md"
   }
 ]

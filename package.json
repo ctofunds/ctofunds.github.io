@@ -17,10 +17,10 @@
   "dependencies": {
     "axios": "^0.17.1",
     "date-fns": "^1.29.0",
+    "marked": "^0.3.7",
     "next": "^4.2.1",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "snarkdown": "^1.2.2"
+    "react-dom": "^16.2.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.0.3",
