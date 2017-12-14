@@ -63,6 +63,14 @@ const Article = ({ date, title, content }) => {
         .article p {
           text-indent: 2em;
         }
+        .article blockquote {
+          background: #F5F5F5;
+          padding: 0.5em 1.6em;
+          margin: 0;
+        }
+        .article blockquote p {
+          text-indent: 0;
+        }
       `}</style>
     </PageWrapper>
   )
