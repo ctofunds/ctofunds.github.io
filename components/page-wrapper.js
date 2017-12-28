@@ -10,6 +10,7 @@ export default ({ children, className, ...restProps }) => {
           content='width=device-width, initial-scale=1, user-scalable=yes'
         />
         <link rel='stylesheet' href='/static/index.css' media='screen' />
+        <meta name='baidu-site-verification' content='ugaSQwguyE' />
       </Head>
       {children}
     </div>
