@@ -1,5 +1,7 @@
 import axios from 'axios'
 import marked from 'marked'
+import Head from 'next/head'
+import { siteTitle } from '../../libs/constants.js'
 import PageWrapper from '../../components/page-wrapper.js'
 import PressFooter from '../../components/press-footer.js'
 import Header from '../../components/header.js'
@@ -12,6 +14,9 @@ const Article = ({ date, title, content }) => {
   const articleHTML = marked(content || '__content__')
   return (
     <PageWrapper>
+      <Head>
+        <title>{title} | {siteTitle}</title>
+      </Head>
       <Header />
       <div className='article'>
         <span>{format(date, 'YYYY.MM.DD')} <i>HiCTO PRESS RELEASE</i></span>
