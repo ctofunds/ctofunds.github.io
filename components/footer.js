@@ -21,11 +21,26 @@ function initBT () {
   })()
 }
 
+function initGrowingIO () {
+  var _vds = window._vds || []
+  window._vds = _vds
+
+  _vds.push(['setAccountId', '8ea566982832d0c8'])
+  var vds = document.createElement('script')
+  vds.type = 'text/javascript'
+  vds.async = true
+  vds.src = (document.location.protocol === 'https:' ? 'https://' : 'http://') +
+    'assets.growingio.com/vds.js'
+  var s = document.getElementsByTagName('script')[0]
+  s.parentNode.insertBefore(vds, s)
+}
+
 export default class extends React.Component {
   componentDidMount () {
     ReactGA.initialize('UA-111657353-1')
     // initGA()
     initBT()
+    initGrowingIO()
   }
   render () {
     return (
