@@ -20,7 +20,8 @@
     "marked": "^0.3.7",
     "next": "^4.2.1",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "react-ga": "^2.3.5"
   },
   "devDependencies": {
     "babel-eslint": "^8.0.3",
