@@ -8,6 +8,21 @@ export default class MyDocument extends Document {
     return { html, head, errorHtml, chunks, styles }
   }
 
+  componentDidMount () {
+    // Google Analytics
+    window.dataLayer = window.dataLayer || []
+    function gtag () { window.dataLayer.push(arguments) }
+    gtag('js', new Date())
+    gtag('config', 'UA-111657353-1')
+
+    // Baidu Tongji
+    window._hmt = window._hmt || []
+
+    // GrowingIO
+    window._vds = window._vds || []
+    window._vds.push(['setAccountId', '8ea566982832d0c8'])
+  }
+
   render () {
     return (
       <html>
@@ -30,20 +45,6 @@ export default class MyDocument extends Document {
             src='https://hm.baidu.com/hm.js?63148d26d2c8b6f82ac697c9d24b2cd4' />
           <script async
             src='https://assets.growingio.com/vds.js' />
-          <script>{`
-            // Google Analytics
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments)}
-            gtag('js', new Date())
-            gtag('config', 'UA-111657353-1')
-
-            // Baidu Tongji
-            window._hmt = window._hmt || []
-
-            // GrowingIO
-            window._vds = window._vds || []
-            window._vds.push(['setAccountId', '8ea566982832d0c8'])
-          `}</script>
         </body>
       </html>
     )
