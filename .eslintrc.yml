@@ -17,7 +17,7 @@ rules:
   - unix
   max-len:
   - error
-  - 80
+  - 90
   - ignoreStrings: true
   - ignoreTemplateLiterals: true
   max-lines:
