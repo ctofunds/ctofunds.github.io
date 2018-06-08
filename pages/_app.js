@@ -24,6 +24,13 @@ export default class MyApp extends App {
     // GrowingIO
     window._vds = window._vds || []
     window._vds.push(['setAccountId', '8ea566982832d0c8'])
+
+    // Service Worker
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+      })
+    }
   }
 
   render () {

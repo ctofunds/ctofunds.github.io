@@ -4,6 +4,7 @@ extends:
 - standard
 - standard-react
 env:
+  serviceworker: true
   browser: true
   node: true
 rules:

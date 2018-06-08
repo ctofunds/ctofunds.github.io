@@ -9,6 +9,7 @@
     "start": "next start",
     "now-build": "next build",
     "build": "node tools/news-gen.js && next build && next export -o dist",
+    "postbuild": "cp static/sw.js dist",
     "deploy": "gh-pages -d dist -b master",
     "now:static": "now -n hi -T hicto deploy dist",
     "prenow": "npm run build",
