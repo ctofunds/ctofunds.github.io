@@ -17,22 +17,22 @@
   "dependencies": {
     "axios": "^0.18",
     "date-fns": "^1.29",
-    "marked": "^0.3",
-    "next": "^5.1",
-    "react": "^16.3",
-    "react-dom": "^16.3"
+    "marked": "^0.4",
+    "next": "^6.0",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
   },
   "devDependencies": {
-    "babel-eslint": "^8.0",
+    "babel-eslint": "^8.2.3",
     "eslint": "^4.13",
     "eslint-config-standard": "^11.0",
     "eslint-config-standard-react": "^6.0",
-    "eslint-plugin-import": "^2.8",
+    "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-node": "^6.0",
-    "eslint-plugin-promise": "^3.6",
-    "eslint-plugin-react": "^7.5",
-    "eslint-plugin-standard": "^3.0",
-    "gh-pages": "^1.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-react": "^7.9.1",
+    "eslint-plugin-standard": "^3.1.0",
+    "gh-pages": "^1.2.0",
     "globby": "^8.0"
   }
 }
