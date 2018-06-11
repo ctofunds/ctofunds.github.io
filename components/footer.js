@@ -5,7 +5,7 @@ export default class extends React.Component {
     return (
       <footer>
         <div className='content-wrapper'>
-          © 2017 HiCTO
+          © 2018 HiCTO
           <div className='footer-right' />
         </div>
         <style jsx>{`
