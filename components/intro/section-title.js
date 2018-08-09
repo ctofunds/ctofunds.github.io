@@ -15,7 +15,6 @@ export default ({children}) => (
       h3:after {
         content: '';
         display: block;
-        z-index: -1;
         position: absolute;
         right: -0.3em;
         bottom: -0.4em;

@@ -3,12 +3,13 @@ import PageWrapper from '../components/page-wrapper.js'
 import Header from '../components/header.js'
 import Footer from '../components/footer.js'
 import IntroHero from '../components/intro/hero.js'
-import IntroTeam from '../components/intro/team.js'
 import IntroClientStartups from '../components/intro/client-startups.js'
 import IntroClientDD from '../components/intro/client-dd.js'
 
+import Team from '../components/intro/team.js'
 import Reviews from '../components/intro/reviews.js'
 
+import partners from '../libs/data-partners.js'
 import reviews from '../libs/data-reviews.js'
 
 export default class extends React.Component {
@@ -28,7 +29,7 @@ export default class extends React.Component {
         <Header />
 
         <IntroHero />
-        <IntroTeam />
+        <Team partners={partners} />
         <IntroClientStartups showIcon={this.state.showStartupIcon} />
         <IntroClientDD />
 
