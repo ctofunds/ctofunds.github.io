@@ -25,11 +25,11 @@ export default class Header extends React.Component {
             <img src="/static/logo@2x.png" />
           </div>
           <div className='nav'>
-            <a href='/#our-team'>关于我们</a>
-            <a href='/#our-clients'>已服务企业</a>
-            <a href='/#fund-clients'>已服务基金</a>
-            <a href='/press'>媒体新闻</a>
-            <a href='/#contact-us'>联系我们</a>
+            <a href='/#hero'>关于 HiCTO</a>
+            <a href='/#our-team'>团队</a>
+            <a href='/#fund-clients'>案例</a>
+            <a href='/press'>合作</a>
+            <a href='mailto:contact@ctofunds.com'>联系我们</a>
           </div>
         </div>
         <style jsx>{`
@@ -62,6 +62,10 @@ export default class Header extends React.Component {
           .nav a {
             font-size: 1rem;
             margin-left: 2.5rem;
+            opacity: 0.5;
+          }
+          .nav a:hover {
+            opacity: 1;
           }
         `}</style>
       </header>

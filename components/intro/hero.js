@@ -1,6 +1,6 @@
 export default () => {
   return (
-    <section id='our-service'>
+    <section id='hero'>
       <div className='content-wrapper'>
         <div className='slogan'>
           <h2>中国第一共享技术合伙人</h2>
@@ -16,13 +16,14 @@ export default () => {
             <span>项目赋能期间获下一轮融资</span>
           </div>
           <div className='ach'>
-            <b>29<sup>个</sup></b>
-            <span>附能项目</span>
+            <b>1900<sup>亿</sup></b>
+            <span>赋能项目总估值</span>
           </div>
         </div>
+        <div className='next'>⌄</div>
       </div>
       <style jsx>{`
-        #our-service {
+        #hero {
           min-height: 100vh;
           padding-top: 90px;
           box-sizing: border-box;
@@ -40,7 +41,7 @@ export default () => {
 
         .slogan {
           min-height: 40vh;
-          flex: 1;
+          flex: 2;
           text-align: center;
           display: flex;
           flex-direction: column;
@@ -57,7 +58,7 @@ export default () => {
           font-size: 32px;
           line-height: 1.6em;
           font-weight: 100;
-          margin: 1rem;
+          margin: 2rem;
         }
 
         .achievements {
@@ -69,20 +70,20 @@ export default () => {
         }
 
         .ach {
-          margin: 5rem;
+          margin: 5rem 6rem;
           text-align: center;
         }
 
         .ach b {
           font-size: 56px;
-          line-height: 32px;
+          line-height: 40px;
         }
 
         .ach sup {
-          font-size: 14px;
+          font-size: 16px;
           font-weight: 100;
           vertical-align: top;
-          line-height: 12px;
+          line-height: 16px;
           display: inline-block;
           width: 1px;
         }
@@ -90,8 +91,17 @@ export default () => {
         .ach span {
           display: block;
           text-align: center;
-          font-size: 14px;
+          font-size: 16px;
           font-weight: 300;
+          padding: 1em;
+        }
+
+        .next {
+          flex: 0.5;
+          height: 80px;
+          font: 60px/80px arial, sans-serif;
+          color: white;
+          text-align: center;
         }
 
         @media (max-width: 900px) {

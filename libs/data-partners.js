@@ -19,21 +19,21 @@ export default [
     content: '前大众点评平台事业群HR负责人\n前1号店人力资源业务合作伙伴\n前Randstad顾问\n\n十年互联网高端人才招聘和组织发展经验'
   },
   {
-    name: '何萱',
-    icon: 'static/avatars/icon-hx.jpg',
-    title: '投后合伙人',
-    content: '前大众点评平台事业群HR负责人\n前1号店人力资源业务合作伙伴\n前Randstad顾问\n\n十年互联网高端人才招聘和组织发展经验'
+    name: '张博',
+    icon: 'static/avatars/zb@2x.jpg',
+    title: '管理合伙人',
+    content: '前正和岛高级合伙人&全国会员部总经理\n前外联集团执行总裁\n前伟事达COO\n前阿里巴巴B2B高管'
   },
   {
-    name: '何萱',
-    icon: 'static/avatars/icon-hx.jpg',
-    title: '投后合伙人',
-    content: '前大众点评平台事业群HR负责人\n前1号店人力资源业务合作伙伴\n前Randstad顾问\n\n十年互联网高端人才招聘和组织发展经验'
+    name: '罗剑',
+    icon: 'static/avatars/lj@2x.jpg',
+    title: '　',
+    content: '前赶集网CTO'
   },
   {
-    name: '何萱',
-    icon: 'static/avatars/icon-hx.jpg',
-    title: '投后合伙人',
-    content: '前大众点评平台事业群HR负责人\n前1号店人力资源业务合作伙伴\n前Randstad顾问\n\n十年互联网高端人才招聘和组织发展经验'
+    name: '陈烨',
+    icon: 'static/avatars/cy@2x.jpg',
+    title: '　',
+    content: '美团大众点评首席数据官\n前Microsoft高级研发总监\nUC Berkeley客座教授'
   }
 ]
