@@ -40,11 +40,11 @@ const PartnerCard = ({ icon, name, title, content }) => {
 
 export default ({ partners }) => {
   return (
-    <section id='reviews'>
+    <section id='our-team'>
       <div className='content-wrapper'>
         <SectionTitle>核心团队</SectionTitle>
         <div className='partners'>
-          { partners.map(p => <PartnerCard {...p} />) }
+          { partners.map(p => <PartnerCard key={p.icon} {...p} />) }
         </div>
         <p className='pros'>
           此外，HiCTO还有一批全职技术专家，他们曾在腾讯、阿里、百度、滴滴、EMC、SAP
@@ -53,6 +53,9 @@ export default ({ partners }) => {
         </p>
       </div>
       <style jsx>{`
+        #our-team {
+          padding-top: 3rem;
+        }
         .partners {
           display: flex;
           flex-wrap: wrap;

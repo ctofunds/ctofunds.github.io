@@ -1,5 +1,4 @@
 import React from 'react'
-import Logo from './logo.js'
 
 export default class Header extends React.Component {
   constructor () {
@@ -7,11 +6,12 @@ export default class Header extends React.Component {
     this.onWindowScroll = this.onWindowScroll.bind(this)
   }
   onWindowScroll () {
-    let opacity = window.scrollY / 400 + 0.6
-    opacity = opacity > 1 ? 1 : opacity
-    this.headerEl.style.backgroundColor = 'rgba(255,255,255,' + opacity + ')'
+    let opacity = window.scrollY / 500
+    opacity = opacity > 0.9 ? 0.9 : opacity
+    this.headerEl.style.backgroundColor = 'rgba(0,30,50,' + opacity + ')'
   }
   componentDidMount () {
+    this.onWindowScroll()
     window.addEventListener('scroll', this.onWindowScroll)
   }
   componentWillUnmount () {
@@ -22,8 +22,7 @@ export default class Header extends React.Component {
       <header ref={elem => (this.headerEl = elem)}>
         <div className='content-wrapper'>
           <div className='logo'>
-            <Logo />HiCTO
-            <span className='slogan'>技术加速梦想</span>
+            <img src="/static/logo@2x.png" />
           </div>
           <div className='nav'>
             <a href='/#our-team'>关于我们</a>
@@ -33,6 +32,38 @@ export default class Header extends React.Component {
             <a href='/#contact-us'>联系我们</a>
           </div>
         </div>
+        <style jsx>{`
+          header {
+            font-size: 1.2rem;
+            line-height: 90px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 999;
+          }
+
+          .logo {
+            display: inline-block;
+            font-weight: bold;
+          }
+
+          .logo img {
+            position: relative;
+            top: 3px;
+            height: 20px;
+            margin-right: 0.3rem;
+          }
+
+          .nav {
+            float: right;
+            font-weight: 200;
+          }
+
+          .nav a {
+            font-size: 1rem;
+            margin-left: 2.5rem;
+          }
+        `}</style>
       </header>
     )
   }

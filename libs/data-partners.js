@@ -35,17 +35,5 @@ export default [
     icon: 'static/avatars/icon-hx.jpg',
     title: '投后合伙人',
     content: '前大众点评平台事业群HR负责人\n前1号店人力资源业务合作伙伴\n前Randstad顾问\n\n十年互联网高端人才招聘和组织发展经验'
-  },
-  {
-    name: '何萱',
-    icon: 'static/avatars/icon-hx.jpg',
-    title: '投后合伙人',
-    content: '前大众点评平台事业群HR负责人\n前1号店人力资源业务合作伙伴\n前Randstad顾问\n\n十年互联网高端人才招聘和组织发展经验'
-  },
-  {
-    name: '何萱',
-    icon: 'static/avatars/icon-hx.jpg',
-    title: '投后合伙人',
-    content: '前大众点评平台事业群HR负责人\n前1号店人力资源业务合作伙伴\n前Randstad顾问\n\n十年互联网高端人才招聘和组织发展经验'
   }
 ]

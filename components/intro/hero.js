@@ -1,66 +1,103 @@
 export default () => {
   return (
     <section id='our-service'>
-      <img src='/static/mbg-light.jpg' />
       <div className='content-wrapper'>
-        <div className='hero'>
-          <h2>创业者的技术合伙人</h2>
-          <p>为创业者提供<br />可落地的全方位技术咨询服务</p>
+        <div className='slogan'>
+          <h2>中国第一共享技术合伙人</h2>
+          <p>成就未来独角兽的技术赋能平台</p>
         </div>
-        <div className='services-list'>
-          <dl className='service-item'>
-            <dd>
-              <ul>
-                <li>CTO顾问的一对一诊脉服务（组织架构、研发流程、系统架构及当前系统瓶颈分析等）</li>
-                <li>商业模型和执行策略、技术规划、系统架构、研发团队建设等内容</li>
-                <li>技术专家每周的贴身跟进服务</li>
-                <li>核心技术骨干的技术面试评估</li>
-                <li>绩效体系、薪酬福利体系的搭建</li>
-              </ul>
-            </dd>
-          </dl>
+        <div className='achievements'>
+          <div className='ach'>
+            <b>29<sup>个</sup></b>
+            <span>赋能项目</span>
+          </div>
+          <div className='ach'>
+            <b>60<sup>%</sup></b>
+            <span>项目赋能期间获下一轮融资</span>
+          </div>
+          <div className='ach'>
+            <b>29<sup>个</sup></b>
+            <span>附能项目</span>
+          </div>
         </div>
       </div>
       <style jsx>{`
-        img {
-          position: absolute;
-          height: 1px;
-          width: 1px;
-          top: -1000px;
-          z-index: 0;
+        #our-service {
+          min-height: 100vh;
+          padding-top: 90px;
+          box-sizing: border-box;
+          background: url(/static/bg@2x.jpg) no-repeat center;
+          background-size: cover;
+          color: #FFF;
         }
 
-        .hero {
-          flex: 1;
-          text-align: center;
-          line-height: 100%;
+        .content-wrapper {
           display: flex;
           flex-direction: column;
-          align-items: center;
+          justify-content: center;
+          min-height: 100%;
+        }
+
+        .slogan {
+          min-height: 40vh;
+          flex: 1;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+        }
+
+        .slogan h2 {
+          font-size: 60px;
+          line-height: 1.2em;
+          margin: 0 0.5em;
+        }
+
+        .slogan p {
+          font-size: 32px;
+          line-height: 1.6em;
+          font-weight: 100;
+          margin: 1rem;
+        }
+
+        .achievements {
+          flex: 2;
+          display: flex;
+          flex-direction: row;
+          align-items: start;
           justify-content: center;
         }
 
-        .hero h2 {
-          font-size: 2rem;
-          letter-spacing: 0.5rem;
-          margin: 1.1em 0;
+        .ach {
+          margin: 5rem;
+          text-align: center;
         }
 
-        .hero p {
-          font-size: 1.6rem;
-          line-height: 1.6em;
-          padding: 0 1em;
+        .ach b {
+          font-size: 56px;
+          line-height: 32px;
         }
 
-        @media (min-width: 1600px) {
-          .hero {
-            font-size: 3rem
-          }
+        .ach sup {
+          font-size: 14px;
+          font-weight: 100;
+          vertical-align: top;
+          line-height: 12px;
+          display: inline-block;
+          width: 1px;
+        }
+
+        .ach span {
+          display: block;
+          text-align: center;
+          font-size: 14px;
+          font-weight: 300;
         }
 
         @media (max-width: 900px) {
-          .content-wrapper { flex-direction: column }
-          .hero { font-size: 1.8rem; padding: 1.5em 0 }
+          .slogan h2 { font-size: 32px }
+          .slogan p { font-size: 16px }
+          .achievements { flex-direction: column }
         }
       `}</style>
     </section>
