@@ -21,7 +21,7 @@ export default class extends React.Component {
         </div>
         <style jsx>{`
           footer {
-            padding: 36px 0;
+            padding: 36px 2rem;
             line-height: 34px;
             font-size: 16px;
             background-color: #04304c;
@@ -48,11 +48,10 @@ export default class extends React.Component {
             text-decoration: none !important;
           }
 
-          @media (max-width: 500px) {
+          @media (max-width: 900px) {
             .content-wrapper {
               display: flex;
               flex-direction: column;
-              padding: 0 2rem;
             }
             .center {
               margin: 2rem 0;

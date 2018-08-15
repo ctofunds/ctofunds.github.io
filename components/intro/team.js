@@ -44,19 +44,19 @@ export default ({ partners }) => {
 
 const PartnerCard = ({ icon, name, title, content }) => {
   return (
-    <div className='review-card'>
+    <div className='partner-card'>
       <img className='icon' src={icon} alt={name} />
       <h5 className='name'>{name}</h5>
       <div className='title'>{title}</div>
       <p className='content'>{content}</p>
       <style jsx>{`
-        .review-card {
+        .partner-card {
           display: inline-block;
           text-align: center;
           max-width: 300px;
           min-width: 280px;
           min-height: 420px;
-          margin: 2rem;
+          margin: 1.5rem;
         }
         .icon {
           border-radius: 50%;

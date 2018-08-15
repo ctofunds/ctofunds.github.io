@@ -56,7 +56,7 @@ export default class MyApp extends App {
           a { text-decoration: none; color: #FFF; }
 
           .content-wrapper {
-            width: 1100px;
+            max-width: 1100px;
             margin: 0 auto;
           }
 
@@ -74,9 +74,6 @@ export default class MyApp extends App {
             html { font-size: 13px }
             body { color: #333; }
             .content-wrapper { width: inherit; }
-
-            header { position: absolute; text-align: center }
-            .nav { display: none }
           }
 
           @media (max-width: 450px) {

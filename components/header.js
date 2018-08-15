@@ -35,7 +35,7 @@ export default class Header extends React.Component {
         <style jsx>{`
           header {
             font-size: 1.2rem;
-            line-height: 80px;
+            line-height: 76px;
             position: fixed;
             top: 0;
             width: 100%;
@@ -49,9 +49,8 @@ export default class Header extends React.Component {
 
           .logo img {
             position: relative;
-            top: 3px;
+            top: 2px;
             height: 20px;
-            margin-right: 0.3rem;
           }
 
           .nav {
@@ -66,6 +65,12 @@ export default class Header extends React.Component {
           }
           .nav a:hover {
             opacity: 1;
+          }
+
+          @media (max-width: 900px) {
+            header { position: absolute; text-align: center }
+            .nav { display: none }
+            .logo img { top: 4px }
           }
         `}</style>
       </header>
