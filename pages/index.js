@@ -6,6 +6,7 @@ import IntroHero from '../components/intro/hero.js'
 import IntroClientStartups from '../components/intro/client-startups.js'
 import IntroClientDD from '../components/intro/client-dd.js'
 
+import Values from '../components/intro/values.js'
 import Team from '../components/intro/team.js'
 import Reviews from '../components/intro/reviews.js'
 
@@ -29,6 +30,7 @@ export default class extends React.Component {
         <Header />
 
         <IntroHero />
+        <Values />
         <Team partners={partners} />
 
         <Footer />

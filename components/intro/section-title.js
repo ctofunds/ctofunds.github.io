@@ -1,5 +1,5 @@
-export default ({children}) => (
-  <div className='section-title'>
+export default ({children, style}) => (
+  <div className='section-title' style={style}>
     <h3>{children}</h3>
     <style jsx>{`
       div {
@@ -9,6 +9,7 @@ export default ({children}) => (
       h3 {
         display: inline-block;
         font-size: 40px;
+        line-height: 1.4em;
         color: #000;
         position: relative;
       }
