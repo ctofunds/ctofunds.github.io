@@ -25,7 +25,7 @@ export default () => {
       <style jsx>{`
         #hero {
           min-height: 100vh;
-          padding-top: 90px;
+          padding-top: 76px;
           box-sizing: border-box;
           background: url(/static/bg@2x.jpg) no-repeat center;
           background-size: cover;
