@@ -20,18 +20,18 @@
     "date-fns": "^1.29",
     "marked": "^0.4",
     "next": "^6.1.1",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1"
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.5",
+    "babel-eslint": "^8.2.6",
     "eslint": "^4.13",
     "eslint-config-standard": "^11.0",
     "eslint-config-standard-react": "^6.0",
-    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-node": "^6.0",
     "eslint-plugin-promise": "^3.8.0",
-    "eslint-plugin-react": "^7.10.0",
+    "eslint-plugin-react": "^7.11.1",
     "eslint-plugin-standard": "^3.1.0",
     "gh-pages": "^1.2.0",
     "globby": "^8.0"

@@ -30,10 +30,6 @@ export default class extends React.Component {
 
         <IntroHero />
         <Team partners={partners} />
-        <IntroClientStartups showIcon={this.state.showStartupIcon} />
-        <IntroClientDD />
-
-        <Reviews reviews={reviews} />
 
         <Footer />
 

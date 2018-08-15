@@ -31,6 +31,12 @@ export default [
     content: '前赶集网CTO'
   },
   {
+    name: '韩军',
+    icon: 'static/avatars/hj@2x.jpg',
+    title: '　',
+    content: '前1号店CTO\n前1号店CTO\n前51job网CTO'
+  },
+  {
     name: '陈烨',
     icon: 'static/avatars/cy@2x.jpg',
     title: '　',

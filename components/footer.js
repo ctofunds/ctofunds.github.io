@@ -9,20 +9,23 @@ export default class extends React.Component {
             <img className='logo' src='/static/logo@2x.png' />
           </div>
           <div className='center'>
-            上海上马石网络科技有限公司<br />
             上海市长宁区长宁路 1027 号兆丰广场 35 楼<br />
+            上海上马石网络科技有限公司<br />
             <br />
             © 2015 – 2018, HiCTO
           </div>
           <div className='right'>
+            <b>联系我们</b>
             <a href='mailto:contact@ctofunds.com'>contact@ctofunds.com</a>
           </div>
         </div>
         <style jsx>{`
           footer {
-            padding: 3em 0;
+            padding: 36px 0;
             line-height: 34px;
             font-size: 16px;
+            background-color: #04304c;
+            color: #EEE;
           }
           .content-wrapper {
             display: grid;
@@ -30,21 +33,34 @@ export default class extends React.Component {
           }
           .logo {
             height: 30px;
-          }
-          .center {
-            color: #112;
+            margin-top: 10px;
           }
           .right {
             text-align: right
           }
           .right b {
-            color: #222;
+            display: block;
+            font-weight: normal;
           }
           .right a {
             font-size: 24px;
-            font-weight: 600;
-            color: #69cbee;
+            font-weight: 300;
             text-decoration: none !important;
+          }
+
+          @media (max-width: 500px) {
+            .content-wrapper {
+              display: flex;
+              flex-direction: column;
+              padding: 0 2rem;
+            }
+            .center {
+              margin: 2rem 0;
+            }
+            .right {
+              margin-top: 2rem;
+              text-align: left;
+            }
           }
         `}</style>
       </footer>

@@ -26,9 +26,9 @@ export default class Header extends React.Component {
           </div>
           <div className='nav'>
             <a href='/#hero'>关于 HiCTO</a>
-            <a href='/#our-team'>团队</a>
-            <a href='/#fund-clients'>案例</a>
-            <a href='/press'>合作</a>
+            <a href='/#team'>团队</a>
+            <a href='/#cases'>案例</a>
+            <a href='/#funds'>合作</a>
             <a href='mailto:contact@ctofunds.com'>联系我们</a>
           </div>
         </div>

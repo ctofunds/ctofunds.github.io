@@ -107,7 +107,7 @@ export default () => {
         @media (max-width: 900px) {
           .slogan h2 { font-size: 32px }
           .slogan p { font-size: 16px }
-          .achievements { flex-direction: column }
+          .achievements { flex-direction: column; align-items: center }
         }
       `}</style>
     </section>
