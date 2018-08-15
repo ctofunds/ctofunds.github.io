@@ -35,7 +35,7 @@ export default class Header extends React.Component {
         <style jsx>{`
           header {
             font-size: 1.2rem;
-            line-height: 90px;
+            line-height: 80px;
             position: fixed;
             top: 0;
             width: 100%;

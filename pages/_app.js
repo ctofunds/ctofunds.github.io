@@ -41,6 +41,50 @@ export default class MyApp extends App {
         <script async src='https://www.googletagmanager.com/gtag/js?id=UA-111657353-1' />
         <script async src='https://hm.baidu.com/hm.js?63148d26d2c8b6f82ac697c9d24b2cd4' />
         <script async src='https://assets.growingio.com/vds.js' />
+        <style jsx global>{`
+          html, body {
+            height: 100%;
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-size: 16px;
+            line-height: 1.8em;
+            color: #222;
+            background-color: #FFF;
+            scroll-behavior: smooth;
+          }
+
+          a { text-decoration: none; color: #FFF; }
+
+          .content-wrapper {
+            width: 1100px;
+            margin: 0 auto;
+          }
+
+          @media (min-width: 1600px) {
+            html {
+              font-size: 16px
+            }
+
+            .content-wrapper {
+              width: 1200px;
+            }
+          }
+
+          @media (max-width: 900px) {
+            html { font-size: 13px }
+            body { color: #333; }
+            .content-wrapper { width: inherit; }
+
+            header { position: absolute; text-align: center }
+            .nav { display: none }
+          }
+
+          @media (max-width: 450px) {
+            html, body {
+              font-size: 12px;
+            }
+          }
+        `}</style>
       </Container>
     )
   }

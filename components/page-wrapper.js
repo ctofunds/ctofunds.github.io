@@ -19,7 +19,6 @@ export default ({ children, className, ...restProps }) => {
         <meta
           name='google-site-verification'
           content='pQ9vVY-1bOLgaRtNkiUXhlX49bsWIsLU8y8EIOqslg4' />
-        <link rel='stylesheet' href='/static/index.css' media='screen' />
         <meta name='baidu-site-verification' content='ugaSQwguyE' />
       </Head>
       {children}
