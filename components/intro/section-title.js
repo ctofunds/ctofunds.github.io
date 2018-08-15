@@ -24,6 +24,10 @@ export default ({children, style}) => (
         opacity: 0.3;
         background-color: #69cbee;
       }
+
+      @media (max-width: 600px) {
+        h3 { font-size: 36px }
+      }
     `}</style>
   </div>
 )

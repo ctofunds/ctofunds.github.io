@@ -110,6 +110,10 @@ export default () => {
           .achievements { flex-direction: column; align-items: center }
           .ach { margin: 3rem }
         }
+
+        @media (max-width: 600px) {
+          #hero { background-image: url(/static/bgm@2x.jpg) }
+        }
       `}</style>
     </section>
   )
