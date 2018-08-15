@@ -32,8 +32,8 @@ export default class extends React.Component {
             grid-template-columns: 200px 1fr 1fr;
           }
           .logo {
-            height: 30px;
-            margin-top: 10px;
+            height: 25px;
+            margin: 10px 2px 0;
           }
           .right {
             text-align: right
