@@ -7,13 +7,10 @@
   "scripts": {
     "dev": "next",
     "start": "next start",
-    "now-build": "next build",
     "build": "node tools/news-gen.js && next build && next export -o dist",
     "postbuild": "cp static/sw.js dist",
-    "deploy": "gh-pages -d dist -b master",
     "now:static": "now -n hi -T hicto deploy dist",
-    "prenow": "npm run build",
-    "now": "now -n hicto -T hicto"
+    "deploy": "gh-pages -d dist -b master"
   },
   "dependencies": {
     "axios": "^0.18",
@@ -25,11 +22,11 @@
   },
   "devDependencies": {
     "babel-eslint": "^8.2.6",
-    "eslint": "^4.13",
+    "eslint": "^5.0",
     "eslint-config-standard": "^11.0",
     "eslint-config-standard-react": "^6.0",
     "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-node": "^6.0",
+    "eslint-plugin-node": "^7.0",
     "eslint-plugin-promise": "^3.8.0",
     "eslint-plugin-react": "^7.11.1",
     "eslint-plugin-standard": "^3.1.0",
