@@ -48,15 +48,16 @@ const CaseCard = ({ icon, name, color = '#333', content }) => {
     <div className='case-card'>
       <img className='icon' src={icon} alt={name} />
       <h5 className='name'>{name}</h5>
-      <div className='content'>
+      <div className='content' style={{background: color}}>
         <h6>{name}</h6>
         <p>{content}</p>
       </div>
       <style jsx>{`
         .case-card {
           text-align: center;
-          width: 230px;
-          min-height: 260px;
+          width: 220px;
+          min-height: 240px;
+          margin: 1px;
           position: relative;
           display: flex;
           flex-direction: column;
@@ -70,7 +71,8 @@ const CaseCard = ({ icon, name, color = '#333', content }) => {
         }
         .name {
           margin: 0.2em 0;
-          font-size: 1rem;
+          font-size: 18px;
+          letter-spacing: 1px;
         }
         .title {
           color: #999;
@@ -100,6 +102,7 @@ const CaseCard = ({ icon, name, color = '#333', content }) => {
         }
         .content h6 {
           font-size: 16px;
+          letter-spacing: 1px;
           margin: 1em 0;
         }
         .case-card:hover .content {
