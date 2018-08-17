@@ -21,6 +21,7 @@ export default class extends React.Component {
         </div>
         <style jsx>{`
           footer {
+            margin-top: 3rem;
             padding: 42px 2rem;
             line-height: 30px;
             font-size: 15px;
