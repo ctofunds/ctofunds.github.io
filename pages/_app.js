@@ -21,10 +21,6 @@ export default class MyApp extends App {
     // Baidu Tongji
     window._hmt = window._hmt || []
 
-    // GrowingIO
-    window._vds = window._vds || []
-    window._vds.push(['setAccountId', '8ea566982832d0c8'])
-
     // Service Worker
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
@@ -40,7 +36,6 @@ export default class MyApp extends App {
         <Component {...pageProps} />
         <script async src='https://www.googletagmanager.com/gtag/js?id=UA-111657353-1' />
         <script async src='https://hm.baidu.com/hm.js?63148d26d2c8b6f82ac697c9d24b2cd4' />
-        <script async src='https://assets.growingio.com/vds.js' />
         <style jsx global>{`
           html, body {
             height: 100%;
