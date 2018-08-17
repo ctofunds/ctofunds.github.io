@@ -8,9 +8,11 @@ import IntroClientDD from '../components/intro/client-dd.js'
 
 import Values from '../components/intro/values.js'
 import Team from '../components/intro/team.js'
+import Cases from '../components/intro/cases.js'
 import Reviews from '../components/intro/reviews.js'
 
 import partners from '../libs/data-partners.js'
+import cases from '../libs/data-cases.js'
 import reviews from '../libs/data-reviews.js'
 
 export default class extends React.Component {
@@ -32,6 +34,7 @@ export default class extends React.Component {
         <IntroHero />
         <Values />
         <Team partners={partners} />
+        <Cases cases={cases} />
 
         <Footer />
 

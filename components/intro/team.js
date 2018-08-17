@@ -15,8 +15,12 @@ export default ({ partners }) => {
         </p>
       </div>
       <style jsx>{`
-        #our-team {
+        #team {
           padding-top: 3rem;
+          margin-bottom: 3rem;
+        }
+        .content-wrapper {
+          border-bottom: 1px solid #DDD;
         }
         .partners {
           display: flex;

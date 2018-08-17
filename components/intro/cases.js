@@ -1,44 +1,6 @@
 import SectionTitle from './section-title.js'
 
-const PartnerCard = ({ icon, name, title, content }) => {
-  return (
-    <div className='review-card'>
-      <img className='icon' src={icon} alt={name} />
-      <h5 className='name'>{name}</h5>
-      <div className='title'>{title}</div>
-      <p className='content'>{content}</p>
-      <style jsx>{`
-        .review-card {
-          display: inline-block;
-          text-align: center;
-          max-width: 300px;
-          min-width: 280px;
-          min-height: 500px;
-          margin: 2rem;
-        }
-        .icon {
-          border-radius: 50%;
-          height: 210px;
-          margin-bottom: 1rem;
-        }
-        .name {
-          margin: 0.2em 0;
-          font-size: 28px;
-        }
-        .title {
-          color: #999;
-        }
-        .content {
-          text-align: center;
-          color: #666;
-          white-space: pre-wrap;
-        }
-      `}</style>
-    </div>
-  )
-}
-
-export default ({ partners }) => {
+export default ({ cases }) => {
   return (
     <section id='cases'>
       <div className='content-wrapper'>
@@ -48,15 +10,98 @@ export default ({ partners }) => {
           互联网创业项目，包括拼多多、兔博士、Hitales、辅料易、名堂、比心、名医主刀、鱼大大、
           Nonda、Carblock等优秀企业，其中60%的项目赋能期间成功获得下一轮融资。
         </p>
+        <div className='cards'>
+          { cases.map(c => <CaseCard {...c} />) }
+        </div>
       </div>
       <style jsx>{`
         .intro {
           font-size: 16px;
-          margin: 3rem auto;
-          max-width: 640px;
-          padding: 2rem;
+          max-width: 660px;
+          margin: 0 auto;
+          padding: 0 2rem;
+          position: relative;
+          top: -2rem;
+          color: #666;
+        }
+        .cards {
+          display: flex;
+          flex-wrap: wrap;
+          align-content: center;
+          justify-content: center;
+        }
+        .content-wrapper {
+          padding-bottom: 5rem;
         }
       `}</style>
     </section>
+  )
+}
+
+
+const CaseCard = ({ icon, name, color = '#333', content }) => {
+  return (
+    <div className='case-card'>
+      <img className='icon' src={icon} alt={name} />
+      <h5 className='name'>{name}</h5>
+      <div className='content'>
+        <h6>{name}</h6>
+        <p>{content}</p>
+      </div>
+      <style jsx>{`
+        .case-card {
+          text-align: center;
+          width: 230px;
+          min-height: 260px;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+        .icon {
+          border-radius: 50%;
+          height: 100px;
+          margin: 1rem;
+        }
+        .name {
+          margin: 0.2em 0;
+          font-size: 1rem;
+        }
+        .title {
+          color: #999;
+        }
+        .content {
+          text-align: center;
+          color: #666;
+          white-space: pre-wrap;
+          display: none;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          box-sizing: border-box;
+          padding: 1rem 2rem;
+          border-radius: 10px;
+          background-color: #555;
+          color: white;
+          overflow: scroll;
+        }
+        .content p {
+          font-size: 14px;
+          font-weight: 300;
+          line-height: 1.4em;
+          text-align: justify;
+        }
+        .content h6 {
+          font-size: 16px;
+          margin: 1em 0;
+        }
+        .case-card:hover .content {
+          display: block;
+        }
+      `}</style>
+    </div>
   )
 }
