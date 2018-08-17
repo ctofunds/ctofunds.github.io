@@ -55,8 +55,8 @@ const CaseCard = ({ icon, name, color = '#333', content }) => {
       <style jsx>{`
         .case-card {
           text-align: center;
-          width: 220px;
-          min-height: 240px;
+          width: 240px;
+          min-height: 260px;
           margin: 1px;
           position: relative;
           display: flex;
@@ -95,7 +95,7 @@ const CaseCard = ({ icon, name, color = '#333', content }) => {
           overflow: scroll;
         }
         .content p {
-          font-size: 14px;
+          font-size: 13px;
           font-weight: 300;
           line-height: 1.4em;
           text-align: justify;
