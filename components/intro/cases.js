@@ -15,6 +15,10 @@ export default ({ cases }) => {
         </div>
       </div>
       <style jsx>{`
+        #cases {
+          padding-top: 60px;
+          margin-top: -90px;
+        }
         .intro {
           font-size: 16px;
           max-width: 660px;

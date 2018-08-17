@@ -21,11 +21,11 @@ export default class extends React.Component {
         </div>
         <style jsx>{`
           footer {
-            padding: 36px 2rem;
-            line-height: 34px;
-            font-size: 16px;
-            background-color: #04304c;
-            color: #EEE;
+            padding: 42px 2rem;
+            line-height: 30px;
+            font-size: 15px;
+            background-color: #04304C;
+            color: #DDD;
           }
           .content-wrapper {
             display: grid;
@@ -43,8 +43,9 @@ export default class extends React.Component {
             font-weight: normal;
           }
           .right a {
-            font-size: 24px;
-            font-weight: 300;
+            font-size: 22px;
+            font-weight: 200;
+            letter-spacing: 1px;
             text-decoration: none !important;
           }
 

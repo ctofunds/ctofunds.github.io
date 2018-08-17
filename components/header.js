@@ -8,7 +8,7 @@ export default class Header extends React.Component {
   onWindowScroll () {
     let opacity = window.scrollY / 500
     opacity = opacity > 0.9 ? 0.9 : opacity
-    this.headerEl.style.backgroundColor = 'rgba(0,30,50,' + opacity + ')'
+    this.headerEl.style.backgroundColor = 'rgba(0,30,60,' + opacity + ')'
   }
   componentDidMount () {
     this.onWindowScroll()

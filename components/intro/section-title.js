@@ -13,7 +13,7 @@ export default ({children, style}) => (
         color: #000;
         position: relative;
       }
-      h4:after {
+      .h3:after {
         content: '';
         display: block;
         position: absolute;
