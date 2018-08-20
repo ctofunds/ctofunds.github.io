@@ -13,7 +13,6 @@ export default () => (
       .content-wrapper {
         display: flex;
         flex-direction: row;
-        border-bottom: 1px solid #DDD;
         justify-content: center;
         align-items: center;
         line-height: 1.5em;
@@ -28,7 +27,7 @@ export default () => (
       @media (max-width: 900px) {
         .content-wrapper {
           flex-direction: column;
-          padding-bottom: 8rem;
+          padding-bottom: 6rem;
         }
         .value {
           margin-left: 0;

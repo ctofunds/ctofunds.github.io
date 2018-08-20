@@ -16,11 +16,11 @@ export default ({ partners }) => {
       </div>
       <style jsx>{`
         #team {
-          padding-top: 3rem;
-          margin-bottom: 3rem;
+          padding: 3rem 0;
+          margin-top: -3rem;
         }
         .content-wrapper {
-          border-bottom: 1px solid #DDD;
+          border-top: 1px solid #DDD;
         }
         .partners {
           display: flex;

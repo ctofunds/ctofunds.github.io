@@ -36,6 +36,7 @@ export default ({ cases }) => {
         }
         .content-wrapper {
           padding-bottom: 5rem;
+          border-top: 1px solid #DDD;
         }
       `}</style>
     </section>
