@@ -11,7 +11,7 @@ export default ({ cases }) => {
           Nonda、Carblock等优秀企业，其中60%的项目赋能期间成功获得下一轮融资。
         </p>
         <div className='cards'>
-          { cases.map(c => <CaseCard {...c} />) }
+          { cases.map(c => <CaseCard key={c.icon} {...c} />) }
         </div>
       </div>
       <style jsx>{`

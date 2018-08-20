@@ -35,6 +35,7 @@ export default class extends React.Component {
         <Values />
         <Team partners={partners} />
         <Cases cases={cases} />
+        <Reviews reviews={reviews} />
         <Institutions vcs={institutions} />
 
         <Footer />
