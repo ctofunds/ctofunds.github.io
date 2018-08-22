@@ -34,7 +34,7 @@ export default [
     name: '韩军',
     icon: 'static/avatars/hj@2x.jpg',
     title: '　',
-    content: '前1号店CTO\n前1号店CTO\n前51job网CTO'
+    content: '前1号店CTO\n前51job网CTO'
   },
   {
     name: '陈烨',

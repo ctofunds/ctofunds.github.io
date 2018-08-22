@@ -93,7 +93,8 @@ const CaseCard = ({ icon, name, color = '#333', content }) => {
           border-radius: 10px;
           background-color: #555;
           color: white;
-          overflow: scroll;
+          overflow-x: hidden;
+          overflow-y: auto;
         }
         .content p {
           font-size: 13px;
