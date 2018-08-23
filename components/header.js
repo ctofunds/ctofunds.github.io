@@ -6,13 +6,22 @@ export default class Header extends React.Component {
     this.onWindowScroll = this.onWindowScroll.bind(this)
   }
   onWindowScroll () {
-    let opacity = window.scrollY / 500
-    opacity = opacity > 0.9 ? 0.9 : opacity
-    this.headerEl.style.backgroundColor = 'rgba(0,30,60,' + opacity + ')'
+    if (window.navigator.userAgent.indexOf('Trident') > 0) {
+      this.headerEl.style.position = 'absolute'
+      // document.getElementsByClassName('next')[0].style.display = 'none'
+    } else {
+      var opacity = window.scrollY / 500
+      opacity = opacity > 0.9 ? 0.9 : opacity
+      this.headerEl.style.backgroundColor = 'rgba(0,30,60,' + opacity + ')'
+    }
   }
   componentDidMount () {
     this.onWindowScroll()
-    window.addEventListener('scroll', this.onWindowScroll)
+    if (window.addEventListener) {
+      window.addEventListener('scroll', this.onWindowScroll)
+    } else {
+      window.attachEvent('onscroll', this.onWindowScroll)
+    }
   }
   componentWillUnmount () {
     window.removeEventListener('scroll', this.onWindowScroll)
