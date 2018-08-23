@@ -89,7 +89,7 @@ const CaseCard = ({ icon, name, color = '#333', content }) => {
           width: 100%;
           height: 100%;
           box-sizing: border-box;
-          padding: 1rem 2rem;
+          padding: 0.5rem 1.5rem;
           border-radius: 10px;
           background-color: #555;
           color: white;

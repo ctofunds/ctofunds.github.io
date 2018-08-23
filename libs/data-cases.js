@@ -4,7 +4,7 @@ export default [
     name: '拼多多',
     icon: 'static/clients/pdd@2x.png',
     color: '#F00',
-    content: `拼多多作为新电商开创者,致力于将娱乐社交的元素融入电商运营中,通过“社交+电商”的模式,让更多的用户带着乐趣分享实惠,享受全新的共享式购物体验
+    content: `拼多多将娱乐社交的元素融入电商运营,让更多的用户分享实惠,享受全新的共享式购物体验
 
 A轮: 高榕资本/IDG
 B轮: 高榕资本/新天域资本/腾讯产业共赢基金
@@ -40,12 +40,10 @@ A/A+轮: 经纬中国/钟鼎创投/HiCTO`
     name: '名堂',
     icon: 'static/clients/mt@2x.png',
     color: '#333',
-    content: `名堂由国际顶级时尚杂志主编、时装总监、作家、艺术家共同发起,通过工作坊、影像、出版等介质，戮力成为时尚文化的策源地和推动者
+    content: `名堂由国际顶级时尚杂志主编、时装总监等共同发起，戮力成为时尚文化的策源地和推动者
 
-A轮: 创新工场/Ventech China/
-华创资本/IDG资本
-B1轮: 创新工场/Ventech China/
-IDG资本
+A轮: 创新工场/Ventech China/华创资本/IDG资本
+B1轮: 创新工场/Ventech China/IDG资本
 B2轮: 凯辉/创新工场/HiCTO`
   },{
     name: '比心',
@@ -63,7 +61,7 @@ A轮:IDG资本`
 
 天使轮：开创资本
 A轮：寒武创投/HiCTO
-A+轮：点亮资本/梅花资本/张涛（新美大董事长）`
+A+轮：点亮资本/梅花资本/张涛`
   },{
     name: '方糖小镇',
     icon: 'static/clients/ft@2x.png',
