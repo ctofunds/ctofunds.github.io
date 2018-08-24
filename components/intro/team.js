@@ -79,6 +79,24 @@ const PartnerCard = ({ icon, name, title, content }) => {
           color: #666;
           white-space: pre-wrap;
         }
+
+        @media (min-width: 600px) {
+          .partner-card:nth-child(1) {
+            max-width: 370px;
+            padding: 0px 100px 0 300px;
+            position: relative;
+            text-align: left;
+            min-height: 260px;
+          }
+          .partner-card:nth-child(1) .icon {
+            position: absolute;
+            top: 0;
+            left: 50px;
+          }
+          .partner-card:nth-child(1) .content {
+            text-align: left;
+          }
+        }
       `}</style>
     </div>
   )

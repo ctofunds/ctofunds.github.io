@@ -40,6 +40,6 @@ export default [
     name: '陈烨',
     icon: 'static/avatars/cy@2x.jpg',
     title: '　',
-    content: '美团大众点评首席数据官\n前Microsoft高级研发总监\nUC Berkeley客座教授'
+    content: '前新美大首席数据官\n前Microsoft高级研发总监\nUC Berkeley客座教授'
   }
 ]
