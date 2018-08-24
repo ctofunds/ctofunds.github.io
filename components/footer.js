@@ -16,7 +16,7 @@ export default class extends React.Component {
           </div>
           <div className='right'>
             <b>联系我们</b>
-            <a href='mailto:contact@ctofunds.com'>contact@ctofunds.com</a>
+            <a href='mailto:bd@ctofunds.com'>bd@ctofunds.com</a>
           </div>
         </div>
         <style jsx>{`

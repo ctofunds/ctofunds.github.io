@@ -38,7 +38,7 @@ export default class Header extends React.Component {
             <a href='/#team'>团队</a>
             <a href='/#cases'>案例</a>
             <a href='/#funds'>合作</a>
-            <a href='mailto:contact@ctofunds.com'>联系我们</a>
+            <a href='mailto:bd@ctofunds.com'>联系我们</a>
           </div>
         </div>
         <style jsx>{`
