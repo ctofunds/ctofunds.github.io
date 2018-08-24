@@ -37,9 +37,10 @@ export default class extends React.Component {
             min-height: 100vh;
             padding-top: 76px;
             box-sizing: border-box;
-            background: url(/static/bg@2x.jpg) no-repeat center;
+            background: url(/static/bg.jpg) no-repeat center;
             background-size: cover;
             color: #FFF;
+            background-color: #246;
           }
 
           .content-wrapper {
