@@ -1,11 +1,16 @@
 import React from 'react'
 
 export default class extends React.Component {
-  componentDidMount () {
-    const isIE = window.navigator.userAgent.indexOf('Trident') > 0
-    if (!isIE) {
-      document.getElementById('next').innerText = '⌄'
+  constructor () {
+    super()
+    this.state = {
+      isIE: true
     }
+  }
+  componentDidMount () {
+    this.setState({
+      isIE: window.navigator.userAgent.indexOf('Trident') > 0
+    })
   }
 
   render () {
@@ -30,7 +35,9 @@ export default class extends React.Component {
               <span>赋能项目总估值</span>
             </div>
           </div>
-          <div id="next" className='next'></div>
+          <div id="next" className='next'>
+            { this.state.isIE ? '' : <img src="/static/ui/arrow-down.svg" /> }
+          </div>
         </div>
         <style jsx>{`
           #hero {
@@ -113,6 +120,10 @@ export default class extends React.Component {
             font: 60px/80px arial, sans-serif;
             color: white;
             text-align: center;
+          }
+
+          .next img {
+            height: 50px;
           }
 
           @media (max-width: 900px) {
