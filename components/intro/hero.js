@@ -4,16 +4,19 @@ export default class extends React.Component {
   constructor () {
     super()
     this.state = {
-      isIE: true
+      showNextButton: false
     }
   }
   componentDidMount () {
-    this.setState({
-      isIE: window.navigator.userAgent.indexOf('Trident') > 0
-    })
+    setTimeout(() => {
+      this.setState({
+        showNextButton: true // window.navigator.userAgent.indexOf('Trident') === -1
+      })
+    }, 1000)
   }
 
   render () {
+    const { showNextButton } = this.state
     return (
       <section id='hero'>
         <div className='content-wrapper'>
@@ -35,19 +38,20 @@ export default class extends React.Component {
               <span>赋能项目总估值</span>
             </div>
           </div>
-          <div id="next" className='next'>
-            { this.state.isIE ? '' : <img src="/static/ui/arrow-down.svg" /> }
+          <div id="next" className={showNextButton ? 'next show' : 'next'}>
+            <img src="/static/ui/arrow-down.svg" />
           </div>
         </div>
         <style jsx>{`
           #hero {
             min-height: 100vh;
-            padding-top: 76px;
+            padding: 76px 0;
             box-sizing: border-box;
             background: url(/static/bg.jpg) no-repeat center;
             background-size: cover;
             color: #FFF;
             background-color: #246;
+            position: relative;
           }
 
           .content-wrapper {
@@ -117,13 +121,22 @@ export default class extends React.Component {
           .next {
             height: 80px;
             width: 100%;
-            font: 60px/80px arial, sans-serif;
-            color: white;
             text-align: center;
+            position: absolute;
+            bottom: 0;
+            left: 0;
           }
 
           .next img {
             height: 50px;
+            opacity: 0;
+            margin-top: -30px;
+            transition: all 500ms cubic-bezier(0.165, 0.84, 0.44, 1);
+          }
+
+          .next.show img {
+            opacity: 1;
+            margin-top: 0;
           }
 
           @media (max-width: 900px) {
