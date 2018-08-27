@@ -64,7 +64,7 @@ export default class Header extends React.Component {
 
           .nav {
             float: right;
-            font-weight: 200;
+            font-weight: 300;
           }
 
           .nav a {
