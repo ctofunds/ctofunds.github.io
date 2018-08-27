@@ -12,7 +12,7 @@ export default class extends React.Component {
       this.setState({
         showNextButton: true // window.navigator.userAgent.indexOf('Trident') === -1
       })
-    }, 1000)
+    }, 600)
   }
 
   render () {
@@ -39,7 +39,7 @@ export default class extends React.Component {
             </div>
           </div>
           <div id="next" className={showNextButton ? 'next show' : 'next'}>
-            <img src="/static/ui/arrow-down.svg" />
+            <a href="#values"><img src="/static/ui/arrow-down.svg" /></a>
           </div>
         </div>
         <style jsx>{`
@@ -119,7 +119,7 @@ export default class extends React.Component {
           }
 
           .next {
-            height: 80px;
+            height: 70px;
             width: 100%;
             text-align: center;
             position: absolute;

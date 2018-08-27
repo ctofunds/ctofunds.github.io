@@ -10,6 +10,10 @@ export default () => (
       <div className="value">培养骨干团队<br />成就业务成长</div>
     </div>
     <style jsx>{`
+      #values {
+        padding-top: 76px;
+        margin-top: -76px;
+      }
       .content-wrapper {
         display: flex;
         flex-direction: row;
