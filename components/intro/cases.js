@@ -44,7 +44,7 @@ export default ({ cases }) => {
 
 const CaseCard = ({ icon, name, color = '#333', content }) => {
   return (
-    <div className='case-card'>
+    <div className='case-card' onTouchStart="this.classList.toggle('hover');">
       <div className='flipper'>
         <div className='front'>
           <img className='icon' src={icon} alt={name} />
@@ -65,7 +65,8 @@ const CaseCard = ({ icon, name, color = '#333', content }) => {
           perspective: 1000px;
           margin: 1rem 0;
         }
-        .case-card:hover .flipper {
+        .case-card:hover .flipper,
+        .case-card.hover .flipper {
           transform: rotateY(180deg);
         }
         .flipper {
