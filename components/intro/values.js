@@ -25,10 +25,10 @@ export default () => (
         font-size: 40px;
         font-weight: 100;
         line-height: 1.4em;
-        margin-left: 8rem;
+        margin-left: 6rem;
       }
 
-      @media (max-width: 900px) {
+      @media (max-width: 1000px) {
         .content-wrapper {
           flex-direction: column;
           padding-bottom: 6rem;

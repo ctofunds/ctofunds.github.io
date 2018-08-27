@@ -36,7 +36,7 @@ export default ({ partners }) => {
           padding: 2rem;
         }
 
-        @media (max-width: 500px) {
+        @media (max-width: 1030px) {
           .partners {
             flex-direction: column;
           }
