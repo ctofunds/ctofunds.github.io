@@ -141,7 +141,7 @@ export default class extends React.Component {
 
           @media (max-width: 900px) {
             .slogan h2 { font-size: 42px }
-            .slogan p { font-size: 16px }
+            .slogan p { font-size: 20px }
             .achievements { flex-direction: column; align-items: center }
             .ach { margin: 3rem }
           }
