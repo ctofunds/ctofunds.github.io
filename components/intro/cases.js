@@ -45,28 +45,53 @@ export default ({ cases }) => {
 const CaseCard = ({ icon, name, color = '#333', content }) => {
   return (
     <div className='case-card'>
-      <img className='icon' src={icon} alt={name} />
-      <h5 className='name'>{name}</h5>
-      <div className='content' style={{background: color}}>
-        <h6>{name}</h6>
-        <p>{content}</p>
+      <div className='flipper'>
+        <div className='front'>
+          <img className='icon' src={icon} alt={name} />
+          <h5 className='name'>{name}</h5>
+        </div>
+        <div className='content' style={{background: color}}>
+          <h6>{name}</h6>
+          <p>{content}</p>
+        </div>
       </div>
       <style jsx>{`
         .case-card {
           text-align: center;
           width: 240px;
-          min-height: 260px;
+          height: 270px;
           margin: 1px;
           position: relative;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
+          perspective: 1000px;
+          margin: 1rem 0;
+        }
+        .case-card:hover .flipper {
+          transform: rotateY(180deg);
+        }
+        .flipper {
+          height: 100%;
+          transition: 0.3s;
+          transform-style: preserve-3d;
+          position: relative;
+          overflow: visible;
+        }
+        .front, .content {
+          width: 100%;
+          height: 100%;
+          backface-visibility: hidden;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-color: #FFF;
+        }
+        .front {
+          z-index: 2;
+          transform: rotateY(0deg);
         }
         .icon {
           border-radius: 50%;
           height: 100px;
-          margin: 1rem;
+          margin: 50px 1rem 1rem;
         }
         .name {
           margin: 0.2em 0;
@@ -77,22 +102,16 @@ const CaseCard = ({ icon, name, color = '#333', content }) => {
           color: #999;
         }
         .content {
+          color: white;
           text-align: center;
-          color: #666;
           white-space: pre-wrap;
-          display: none;
-          position: absolute;
           top: 0;
           left: 0;
-          width: 100%;
-          height: 100%;
           box-sizing: border-box;
           padding: 0.5rem 1.5rem;
           border-radius: 10px;
           background-color: #555;
-          color: white;
-          overflow-x: hidden;
-          overflow-y: auto;
+          transform: rotateY(180deg);
         }
         .content p {
           font-size: 13px;
@@ -104,9 +123,6 @@ const CaseCard = ({ icon, name, color = '#333', content }) => {
           font-size: 16px;
           letter-spacing: 1px;
           margin: 1em 0;
-        }
-        .case-card:hover .content {
-          display: block;
         }
       `}</style>
     </div>
