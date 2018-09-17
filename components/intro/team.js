@@ -25,7 +25,7 @@ export default ({ partners }) => {
         .partners {
           display: flex;
           flex-wrap: wrap;
-          align-items: center;
+          align-items: flex-start;
           justify-content: center;
         }
         .pros {
