@@ -116,7 +116,6 @@ const CaseCard = ({ icon, name, color = '#333', content }) => {
         }
         .content p {
           font-size: 13px;
-          font-weight: 300;
           line-height: 1.4em;
           text-align: justify;
         }
