@@ -6,7 +6,7 @@ export default ({ cases }) => {
       <div className='content-wrapper'>
         <SectionTitle>赋能项目</SectionTitle>
         <p className='intro'>
-          HiCTO作为创业者的共享技术合伙人，提供全方位可落地的技术支持。目前已成功赋能约三十个互联网创业项目，包括拼多多、兔博士、Hitales、辅料易、名堂、比心、名医主刀、鱼大大、Nonda、Carblock等优秀企业，其中60%的项目赋能期间成功获得下一轮融资。
+          HiCTO作为创业者的共享技术合伙人，提供全方位可落地的技术支持。目前已成功赋能约三十个互联网创业项目，包括兔博士、Hitales、辅料易、拼多多、名堂、比心、名医主刀、鱼大大、Nonda、Carblock等优秀企业，其中60%的项目赋能期间成功获得下一轮融资。
         </p>
         <div className='cards'>
           { cases.map(c => <CaseCard key={c.icon} {...c} />) }
