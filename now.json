@@ -1,0 +1,10 @@
+{
+  "name": "hi",
+  "type": "static",
+  "static": {
+    "public": "dist"
+  },
+  "files": [
+    "dist"
+  ]
+}
