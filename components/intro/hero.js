@@ -21,8 +21,8 @@ export default class extends React.Component {
       <section id='hero'>
         <div className='content-wrapper'>
           <div className='slogan'>
-            <h2>中国第一共享技术合伙人</h2>
-            <p>成就未来独角兽的技术赋能平台</p>
+            <h2>创业者可信赖的共享技术合伙人</h2>
+            <p>未来独角兽背后的技术赋能机构</p>
           </div>
           <div className='achievements'>
             <div className='ach'>
