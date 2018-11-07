@@ -26,11 +26,11 @@ export default class extends React.Component {
           </div>
           <div className='achievements'>
             <div className='ach'>
-              <b>29<sup>个</sup></b>
+              <b>33<sup>个</sup></b>
               <span>赋能项目</span>
             </div>
             <div className='ach'>
-              <b>60<sup>%</sup></b>
+              <b>65<sup>%</sup></b>
               <span>项目赋能期间获下一轮融资</span>
             </div>
             <div className='ach'>
@@ -38,8 +38,8 @@ export default class extends React.Component {
               <span>赋能项目总估值</span>
             </div>
           </div>
-          <div id="next" className={showNextButton ? 'next show' : 'next'}>
-            <a href="#values"><img src="/static/ui/arrow-down.svg" /></a>
+          <div id='next' className={showNextButton ? 'next show' : 'next'}>
+            <a href='#values'><img src='/static/ui/arrow-down.svg' /></a>
           </div>
         </div>
         <style jsx>{`
