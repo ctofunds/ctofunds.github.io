@@ -15,6 +15,7 @@ export default class extends React.Component {
     }, 600)
   }
 
+  /* eslint-disable max-len */
   render () {
     const { showNextButton } = this.state
     return (
@@ -26,16 +27,16 @@ export default class extends React.Component {
           </div>
           <div className='achievements'>
             <div className='ach'>
+              <b>12<sup>家</sup></b>
+              <span>DCM、高瓴、君联、高榕等12家知名机构的指定技术尽职调查供应商</span>
+            </div>
+            <div className='ach'>
               <b>33<sup>个</sup></b>
-              <span>赋能项目</span>
+              <span>为Hitales、兔博士、比心、名医主刀等33个创业企业提供深度技术赋能服务，超过50%项目是由凯辉、高榕、经纬、软银等知名机构推荐</span>
             </div>
             <div className='ach'>
               <b>65<sup>%</sup></b>
-              <span>项目赋能期间获下一轮融资</span>
-            </div>
-            <div className='ach'>
-              <b>1900<sup>亿</sup></b>
-              <span>赋能项目总估值</span>
+              <span>技术赋能期间超过60%的所服务企业获得红杉、经纬、IDG、凯辉等知名投资机构的后续投资</span>
             </div>
           </div>
           <div id='next' className={showNextButton ? 'next show' : 'next'}>
@@ -92,7 +93,8 @@ export default class extends React.Component {
           }
 
           .ach {
-            margin: 5rem 6rem;
+            max-width: 300px;
+            margin: 3rem 2rem;
             text-align: center;
           }
 
