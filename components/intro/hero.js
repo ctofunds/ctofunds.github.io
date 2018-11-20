@@ -28,7 +28,7 @@ export default class extends React.Component {
           <div className='achievements'>
             <div className='ach'>
               <b>12<sup>家</sup></b>
-              <span>DCM、高瓴、君联、高榕等12家知名机构的指定技术尽职调查供应商</span>
+              <span>DCM、君联、高榕等12家知名机构的指定技术尽职调查供应商</span>
             </div>
             <div className='ach'>
               <b>33<sup>个</sup></b>
