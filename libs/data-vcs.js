@@ -4,7 +4,6 @@ export default [
   { icon: 'static/clients/vcs/idg@2x.png' },
   { icon: 'static/clients/vcs/mfund@2x.png' },
   { icon: 'static/clients/vcs/ryzg@2x.png' },
-  { icon: 'static/clients/vcs/hhc@2x.png' },
   { icon: 'static/clients/vcs/zgjj@2x.png' },
   { icon: 'static/clients/vcs/khjj@2x.png' },
   { icon: 'static/clients/vcs/jlzb@2x.png' },
