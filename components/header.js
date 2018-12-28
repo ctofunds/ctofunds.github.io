@@ -31,7 +31,7 @@ export default class Header extends React.Component {
       <header ref={elem => (this.headerEl = elem)}>
         <div className='content-wrapper'>
           <div className='logo'>
-            <a href="#hero"><img src="/static/logo@2x.png" /></a>
+            <a href='#hero'><img src='/static/logo@2x.png' /></a>
           </div>
           <div className='nav'>
             <a href='/#hero'>关于 HiCTO</a>

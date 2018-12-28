@@ -1,4 +1,4 @@
-export default ({children, style}) => (
+export default ({ children, style }) => (
   <div className='section-title' style={style}>
     <h3>{children}</h3>
     <style jsx>{`

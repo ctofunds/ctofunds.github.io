@@ -7,7 +7,7 @@ export default ({ children, className, ...restProps }) => {
     <div className={'body-wrapper ' + className} {...restProps}>
       <Head>
         <title>{siteTitle}</title>
-        <link rel="icon" href="/static/favicon.png" />
+        <link rel='icon' href='/static/favicon.png' />
         <meta
           name='viewport'
           content='width=device-width, initial-scale=1, user-scalable=yes' />

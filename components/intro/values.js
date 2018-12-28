@@ -1,13 +1,13 @@
 import SectionTitle from './section-title.js'
 
 export default () => (
-  <section id="values">
-    <div className="content-wrapper">
-      <SectionTitle style={{textAlign: 'left'}}>
+  <section id='values'>
+    <div className='content-wrapper'>
+      <SectionTitle style={{ textAlign: 'left' }}>
         为创业者赋能技术<br />加速创业梦想
       </SectionTitle>
-      <div className="value">降低技术风险<br />提高研发效率</div>
-      <div className="value">培养骨干团队<br />成就业务成长</div>
+      <div className='value'>降低技术风险<br />提高研发效率</div>
+      <div className='value'>培养骨干团队<br />成就业务成长</div>
     </div>
     <style jsx>{`
       #values {

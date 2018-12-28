@@ -2,17 +2,12 @@
 
 https://www.hicto.tech
 
-## Preview
+## Developing
 
 ```
-yarn build
-serve dist
+yarn start
 ```
 
 ## Deploy
 
-```
-yarn build
-yarn now:static
-now alias hi-xxxxxx.now.sh www.hicto.tech
-```
+Auto deploy to now.sh on commits.

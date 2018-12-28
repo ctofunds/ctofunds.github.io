@@ -1,10 +1,10 @@
 import SectionTitle from './section-title.js'
 
 export default ({ vcs }) => (
-  <div id="funds" className="vcs">
-    <div className="content-wrapper">
+  <div id='funds' className='vcs'>
+    <div className='content-wrapper'>
       <SectionTitle>合作机构</SectionTitle>
-      <div className="logos">
+      <div className='logos'>
         { vcs.map(vc => <img key={vc.icon} src={vc.icon} />) }
       </div>
     </div>
