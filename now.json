@@ -1,8 +1,11 @@
 {
+  "version": 2,
   "name": "hi",
-  "type": "static",
   "alias": [
     "hicto.tech",
     "www.hicto.tech"
+  ],
+  "builds": [
+    { "src": "package.json", "use": "@now/static-build" }
   ]
 }
