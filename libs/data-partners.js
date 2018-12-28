@@ -28,13 +28,13 @@ export default [
     name: '罗剑',
     icon: 'static/avatars/lj@2x.jpg',
     title: '　',
-    content: '前赶集网CTO'
+    content: '前赶集网CTO\n2014中国十大最有影响力CTO'
   },
   {
     name: '韩军',
     icon: 'static/avatars/hj@2x.jpg',
     title: '　',
-    content: '前1号店CTO\n前51job网CTO'
+    content: '前1号店CTO\n前51job网CTO\n2014中国十大最有影响力CTO'
   },
   {
     name: '陈烨',

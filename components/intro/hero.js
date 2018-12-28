@@ -27,11 +27,11 @@ export default class extends React.Component {
           </div>
           <div className='achievements'>
             <div className='ach'>
-              <b>12<sup>家</sup></b>
+              <b>15<sup>家</sup></b>
               <span>DCM、君联、高榕等12家知名机构的指定技术尽职调查供应商</span>
             </div>
             <div className='ach'>
-              <b>33<sup>个</sup></b>
+              <b>35<sup>个</sup></b>
               <span>为Hitales、兔博士、比心、名医主刀等33个创业企业提供深度技术赋能服务，超过50%项目是由凯辉、高榕、经纬、软银等知名机构推荐</span>
             </div>
             <div className='ach'>
