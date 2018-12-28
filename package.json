@@ -9,9 +9,7 @@
     "start": "next start",
     "build": "node tools/news-gen.js && next build && next export -o dist",
     "postbuild": "cp static/sw.js dist",
-    "now-build": "npm run build",
-    "now:static": "now -n hi -T hicto",
-    "deploy": "gh-pages -d dist -b master"
+    "now-build": "npm run build"
   },
   "dependencies": {
     "axios": "^0.18",
