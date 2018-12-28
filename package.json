@@ -13,15 +13,15 @@
   },
   "dependencies": {
     "axios": "^0.18",
-    "date-fns": "^1.29",
-    "marked": "^0.5.1",
+    "date-fns": "^1.30.1",
+    "marked": "^0.5.2",
     "next": "^7.0.2",
-    "react": "^16.6.1",
-    "react-dom": "^16.6.1"
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0",
-    "eslint": "^5.9.0",
+    "eslint": "^5.11.1",
     "eslint-config-standard": "^12.0",
     "eslint-config-standard-react": "^7.0",
     "eslint-plugin-import": "^2.14.0",
