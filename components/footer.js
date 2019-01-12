@@ -12,7 +12,7 @@ export default class extends React.Component {
             上海市长宁区长宁路 1027 号兆丰广场 35 楼<br />
             上海上马石网络科技有限公司<br />
             <br />
-            © 2015 – 2018, HiCTO
+            © 2015 – 2019, HiCTO
           </div>
           <div className='right'>
             <b>联系我们</b>
