@@ -28,15 +28,15 @@ export default class extends React.Component {
           <div className='achievements'>
             <div className='ach'>
               <b>15<sup>家</sup></b>
-              <span>DCM、君联、高榕等12家知名机构的指定技术尽职调查供应商</span>
+              <span>DCM、君联、高榕等15家知名机构的指定技术尽职调查供应商</span>
             </div>
             <div className='ach'>
               <b>35<sup>个</sup></b>
-              <span>为Hitales、兔博士、比心、名医主刀等33个创业企业提供深度技术赋能服务，超过50%项目是由凯辉、高榕、经纬、软银等知名机构推荐</span>
+              <span>为Hitales、兔博士、比心、名医主刀等35个创业企业提供深度技术赋能服务，超过50%项目是由凯辉、高榕、经纬、软银等知名机构推荐</span>
             </div>
             <div className='ach'>
               <b>65<sup>%</sup></b>
-              <span>技术赋能期间超过60%的所服务企业获得红杉、经纬、IDG、凯辉等知名投资机构的后续投资</span>
+              <span>技术赋能期间超过65%的所服务企业获得红杉、经纬、IDG、凯辉等知名投资机构的后续投资</span>
             </div>
           </div>
           <div id='next' className={showNextButton ? 'next show' : 'next'}>
