@@ -5,8 +5,8 @@
   "repository": "ctofunds/ctofunds.github.io",
   "private": true,
   "scripts": {
-    "dev": "next",
-    "start": "next start",
+    "dev": "node tools/news-gen.js && next",
+    "start": "node tools/news-gen.js && next start",
     "prebuild": "eslint .",
     "build": "node tools/news-gen.js && next build && next export -o dist",
     "postbuild": "cp static/sw.js dist",
