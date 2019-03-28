@@ -13,13 +13,14 @@ const targetFile = path.resolve(__dirname, '../libs/news.json')
 const list = globby
   .sync(sourceDir + '/**/*.md')
   .map(file => {
-    const attributes = matter(fs.readFileSync(file, 'utf8'))
     const filename = path.parse(file).name
+    const attributes = matter(fs.readFileSync(file, 'utf8'))
+    const staticDir = path.resolve(__dirname, '..')
 
     return {
       id: filename,
       ...attributes,
-      file
+      file: path.relative(staticDir, file)
     }
   })
   .sort((a, b) => (b.id - a.id))
