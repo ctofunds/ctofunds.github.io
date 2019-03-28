@@ -42,9 +42,13 @@ export default ({ cases }) => {
   )
 }
 
+function touchFlip () {
+  this.classList.toggle('hover')
+}
+
 const CaseCard = ({ icon, name, color = '#333', content }) => {
   return (
-    <div className='case-card' onTouchStart="this.classList.toggle('hover');">
+    <div className='case-card' onTouchStart={touchFlip}>
       <div className='flipper'>
         <div className='front'>
           <img className='icon' src={icon} alt={name} />
